@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -34,7 +34,7 @@ export default function CountriesSection() {
           <p className="label-sm mb-4">Global Reach</p>
           <h2 className="section-heading mb-4">Countries We Support</h2>
           <p className="body-lg mx-auto text-center max-w-[500px]">
-            Send money to 190+ countries. Here are our most popular destinations.
+            Send money to 9+ countries. Here are our most popular destinations.
           </p>
         </motion.div>
 
@@ -44,7 +44,7 @@ export default function CountriesSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.8 }}
-          className="bg-[--bg] rounded-[28px] border border-[--border] p-5 sm:p-8 md:p-12 mb-8"
+          className="bg-[--bg] rounded-[28px] p-5 sm:p-8 md:p-12 mb-8"
         >
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2.5 bg-white border-2 border-[#217bc6]/20 rounded-full px-5 py-2.5 shadow-card">
@@ -112,7 +112,7 @@ export default function CountriesSection() {
               whileTap={{ scale: 0.95 }}
               className="btn-ghost"
             >
-              View All 190+ Countries
+              View All 9+ Countries
               <ArrowRight size={14} />
             </motion.button>
           </Link>
@@ -121,3 +121,4 @@ export default function CountriesSection() {
     </section>
   );
 }
+

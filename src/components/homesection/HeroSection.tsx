@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -92,7 +92,7 @@ function PhoneMockup() {
             <div className="w-7 h-7 rounded-full bg-blue-50 flex items-center justify-center">
               <Globe size={12} className="text-blue-600" />
             </div>
-            <p className="text-[11px] font-bold text-[--text-primary]">190+ Countries</p>
+            <p className="text-[11px] font-bold text-[--text-primary]">9+ Countries</p>
           </div>
           <div className="flex -space-x-1.5">
             {["🇺🇸", "🇬🇧", "🇮🇳", "🇦🇪", "🇸🇬", "🇨🇦"].map((f, i) => (
@@ -107,7 +107,7 @@ function PhoneMockup() {
 }
 
 const stats = [
-  { value: "190+", label: "Countries", icon: Globe },
+  { value: "9+", label: "Countries", icon: Globe },
   { value: "10M+", label: "Happy Users", icon: Shield },
   { value: "99.9%", label: "Uptime", icon: TrendingUp },
 ];
@@ -195,3 +195,4 @@ export default function HeroSection() {
     </section>
   );
 }
+

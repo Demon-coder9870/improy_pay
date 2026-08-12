@@ -6,22 +6,22 @@ import { fadeUp } from "@/lib/animations";
 
 const stats = [
   {
-    value: 150,
+    value: 8,
     suffix: "+",
     label: "Countries",
     sub: "Worldwide reach",
     icon: "🌍",
   },
   {
-    value: 70,
+    value: 8,
     suffix: "+",
     label: "Currencies",
     sub: "Local payouts",
     icon: "💱",
   },
   {
-    value: 2,
-    suffix: "M+",
+    value: 5,
+    suffix: "k",
     label: "Customers",
     sub: "And growing daily",
     icon: "👥",

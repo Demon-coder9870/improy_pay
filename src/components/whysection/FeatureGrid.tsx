@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import {
   ShieldCheck,
@@ -203,3 +203,4 @@ export default function FeatureGrid() {
     </section>
   );
 }
+

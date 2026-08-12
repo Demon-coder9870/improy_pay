@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
@@ -12,7 +12,7 @@ export default function Stats() {
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"
         >
           <motion.div variants={fadeUp} className="card p-6 text-center hover:-translate-y-2 transition-transform duration-300 bg-white">
-            <div className="text-gradient-blue text-4xl font-bold mb-2">190+</div>
+            <div className="text-gradient-blue text-4xl font-bold mb-2">9+</div>
             <div className="body-md font-medium">Countries Supported</div>
           </motion.div>
           <motion.div variants={fadeUp} className="card p-6 text-center hover:-translate-y-2 transition-transform duration-300 bg-white">
@@ -32,3 +32,4 @@ export default function Stats() {
     </section>
   );
 }
+

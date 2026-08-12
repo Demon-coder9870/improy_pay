@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -14,7 +14,7 @@ const faqData = [
       },
       {
         q: "Which countries can I send money to from the UAE?",
-        a: "You can send money across major remittance corridors including India, Pakistan, Egypt, the Philippines, Bangladesh, Sri Lanka, Nepal, Nigeria, and more than 190 destinations worldwide."
+        a: "You can send money across major remittance corridors including India, Pakistan, Egypt, the Philippines, Bangladesh, Sri Lanka, Nepal, Nigeria, and more than 9+ destinations worldwide."
       },
       {
         q: "Is ImproPay available on both Android and iOS?",
@@ -326,3 +326,4 @@ export default function FaqAccordion() {
     </motion.div>
   );
 }
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
@@ -55,7 +55,7 @@ const highlights = [
     title: "Built for real people",
     description:
       "Whether you're supporting family back home or paying international remote teams — crafted for human convenience.",
-    stat: "190+",
+    stat: "9+",
     statLabel: "countries",
     gradient: "from-[#f43f5e] to-[#e11d48]",
     glowColor: "rgba(244, 63, 94, 0.25)",
@@ -220,3 +220,4 @@ export default function FeatureHighlights() {
     </section>
   );
 }
+

@@ -1,10 +1,10 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "190+", label: "Countries reachable" },
+  { value: "9+", label: "Countries reachable" },
   { value: "9", label: "Live global corridors" },
   { value: "4", label: "Continents, one team" },
   { value: "4.8★", label: "Loved by senders" },
@@ -111,3 +111,4 @@ export default function SecuritySection() {
     </section>
   );
 }
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -25,7 +25,7 @@ export default function GlobalCTA() {
             </span>
             
             <h2 className="text-[2.25rem] md:text-[3.25rem] font-extrabold text-white leading-[1.1] tracking-tight mb-5">
-              Connect with 190+ countries
+              Connect with 9+ countries
               <br />
               in a few clicks.
             </h2>
@@ -56,7 +56,7 @@ export default function GlobalCTA() {
             </div>
             
             <p className="text-white/60 text-[0.6875rem] font-bold font-mono tracking-wider mt-8 uppercase">
-              190+ COUNTRIES • 70+ CURRENCIES • 350,000+ PAYOUT HUBS
+              9+ COUNTRIES • 70+ CURRENCIES • 350,000+ PAYOUT HUBS
             </p>
           </div>
         </motion.div>
@@ -64,3 +64,4 @@ export default function GlobalCTA() {
     </section>
   );
 }
+

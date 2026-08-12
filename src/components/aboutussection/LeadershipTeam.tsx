@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
@@ -35,7 +35,7 @@ export default function LeadershipTeam() {
             { 
               name: "Elena Rodriguez", 
               role: "Chief Operations Officer", 
-              bio: "Expert in global compliance and scaling financial networks across 190+ countries.",
+              bio: "Expert in global compliance and scaling financial networks across 9+ countries.",
               img: "https://i.pravatar.cc/150?img=5" 
             },
             { 
@@ -78,3 +78,4 @@ export default function LeadershipTeam() {
     </section>
   );
 }
+

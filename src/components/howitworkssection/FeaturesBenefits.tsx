@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
@@ -248,3 +248,4 @@ export default function FeaturesBenefits() {
     </section>
   );
 }
+
