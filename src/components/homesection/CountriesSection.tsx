@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -7,14 +7,14 @@ import { ArrowRight, TrendingUp } from "lucide-react";
 import FlagIcon from "@/components/ui/FlagIcon";
 
 const countries = [
-  { name: "India", code: "IN", currency: "INR", rate: "84.32", transfers: "2M+ monthly" },
-  { name: "UAE", code: "AE", currency: "AED", rate: "3.67", transfers: "800K+ monthly" },
-  { name: "USA", code: "US", currency: "USD", rate: "1.00", transfers: "1.5M+ monthly" },
-  { name: "UK", code: "GB", currency: "GBP", rate: "0.79", transfers: "600K+ monthly" },
-  { name: "Canada", code: "CA", currency: "CAD", rate: "1.37", transfers: "400K+ monthly" },
-  { name: "Australia", code: "AU", currency: "AUD", rate: "1.55", transfers: "350K+ monthly" },
-  { name: "Singapore", code: "SG", currency: "SGD", rate: "1.34", transfers: "500K+ monthly" },
-  { name: "Saudi Arabia", code: "SA", currency: "SAR", rate: "3.75", transfers: "700K+ monthly" },
+  { name: "India", code: "IN", currency: "INR", rate: "22.75", transfers: "2M+ monthly" },
+  { name: "UAE", code: "AE", currency: "AED", rate: "1.00", transfers: "800K+ monthly" },
+  { name: "USA", code: "US", currency: "USD", rate: "0.27", transfers: "1.5M+ monthly" },
+  { name: "UK", code: "GB", currency: "GBP", rate: "0.22", transfers: "600K+ monthly" },
+  { name: "Canada", code: "CA", currency: "CAD", rate: "0.37", transfers: "400K+ monthly" },
+  { name: "Australia", code: "AU", currency: "AUD", rate: "0.42", transfers: "350K+ monthly" },
+  { name: "Singapore", code: "SG", currency: "SGD", rate: "0.36", transfers: "500K+ monthly" },
+  { name: "Saudi Arabia", code: "SA", currency: "SAR", rate: "1.02", transfers: "700K+ monthly" },
 ];
 
 export default function CountriesSection() {
@@ -90,7 +90,7 @@ export default function CountriesSection() {
                     className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2.5 bg-[#0B1120] text-white rounded-2xl px-4 py-3 w-[180px] shadow-xl z-30 pointer-events-none"
                   >
                     <div className="flex items-center justify-between mb-1">
-                      <span className="text-[10px] font-semibold text-white/50 uppercase tracking-wider">1 USD =</span>
+                      <span className="text-[10px] font-semibold text-white/50 uppercase tracking-wider">1 AED =</span>
                       <span className="text-[0.875rem] font-extrabold">{country.rate} {country.currency}</span>
                     </div>
                     <div className="flex items-center gap-1 text-[10px] text-green-400 font-semibold">

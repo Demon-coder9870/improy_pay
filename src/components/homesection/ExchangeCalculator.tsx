@@ -16,9 +16,9 @@ const currencies = [
   { code: "SGD", name: "Singapore Dollar", flag: "🇸🇬", symbol: "S$" },
 ];
 
-// Fallback rates (USD base) used if the API is unreachable
+// Fallback rates (AED base) used if the API is unreachable
 const fallbackRates: Record<string, number> = {
-  USD: 1, EUR: 0.92, GBP: 0.79, AED: 3.67, INR: 96.45, AUD: 1.55, CAD: 1.37, SGD: 1.34,
+  AED: 1, USD: 0.27, EUR: 0.25, GBP: 0.22, INR: 22.75, AUD: 0.42, CAD: 0.37, SGD: 0.36,
 };
 
 const API_KEY = process.env.NEXT_PUBLIC_EXCHANGERATE_API_KEY || "8dc667bfc14b4f8679a75507";
@@ -31,12 +31,12 @@ export default function ExchangeCalculator() {
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Fetch live rates from ExchangeRate-API (USD base)
+  // Fetch live rates from ExchangeRate-API (AED base)
   const fetchRates = useCallback(async () => {
     setIsLoading(true);
     try {
       const res = await fetch(
-        `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/USD`
+        `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/AED`
       );
       const data = await res.json();
       if (data.result === "success") {
@@ -185,22 +185,12 @@ export default function ExchangeCalculator() {
                   />
                 </div>
                 
-                {/* Custom Currency Dropdown */}
+                {/* Fixed Currency Display */}
                 <div className="relative shrink-0 ml-4">
-                  <div className="flex items-center gap-2 bg-white border border-slate-200 shadow-sm rounded-full px-3.5 py-1.5 cursor-pointer font-bold text-[0.875rem] text-[--text-primary] hover:border-[#217bc6]/40 transition-colors">
+                  <div className="flex items-center gap-2 bg-white border border-slate-200 shadow-sm rounded-full px-3.5 py-1.5 font-bold text-[0.875rem] text-[--text-primary]">
                     <FlagIcon code={fromCurrency} size="sm" className="w-5 h-3.5 rounded-[3px] object-cover shadow-xs border border-black/10" />
                     <span>{fromCurrency}</span>
-                    <ChevronDown size={14} className="text-slate-400" />
                   </div>
-                  <select
-                    value={fromCurrency}
-                    onChange={(e) => setFromCurrency(e.target.value)}
-                    className="absolute inset-0 opacity-0 cursor-pointer w-full"
-                  >
-                    {currencies.map((c) => (
-                      <option key={c.code} value={c.code}>{c.code}</option>
-                    ))}
-                  </select>
                 </div>
               </div>
 

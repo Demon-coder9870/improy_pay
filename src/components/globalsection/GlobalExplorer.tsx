@@ -23,7 +23,7 @@ interface CountryInfo {
   code: string;
   currency: string;
   region: "apac" | "europe" | "north_america" | "mena" | "latam";
-  rateVsUSD: string;
+  rateVsAED: string;
   speed: "Instant (<2 min)" | "Under 5 mins" | "Same-Day";
   methods: ("bank" | "mobile" | "cash")[];
   popular?: boolean;
@@ -31,16 +31,16 @@ interface CountryInfo {
 
 const COUNTRIES_DATA: CountryInfo[] = [
   // APAC
-  { name: "India", code: "IN", currency: "INR", region: "apac", rateVsUSD: "83.45", speed: "Instant (<2 min)", methods: ["bank", "mobile", "cash"], popular: true },
-  { name: "Pakistan", code: "PK", currency: "PKR", region: "apac", rateVsUSD: "278.50", speed: "Instant (<2 min)", methods: ["bank", "mobile", "cash"], popular: true },
-  { name: "Philippines", code: "PH", currency: "PHP", region: "apac", rateVsUSD: "56.30", speed: "Instant (<2 min)", methods: ["bank", "mobile", "cash"], popular: true },
-  { name: "Bangladesh", code: "BD", currency: "BDT", region: "apac", rateVsUSD: "117.80", speed: "Instant (<2 min)", methods: ["bank", "mobile", "cash"] },
-  { name: "Sri Lanka", code: "LK", currency: "LKR", region: "apac", rateVsUSD: "305.50", speed: "Instant (<2 min)", methods: ["bank", "cash"] },
-  { name: "Nepal", code: "NP", currency: "NPR", region: "apac", rateVsUSD: "133.50", speed: "Instant (<2 min)", methods: ["bank", "mobile", "cash"] },
+  { name: "India", code: "IN", currency: "INR", region: "apac", rateVsAED: "22.75", speed: "Instant (<2 min)", methods: ["bank"], popular: true },
+  { name: "Pakistan", code: "PK", currency: "PKR", region: "apac", rateVsAED: "75.80", speed: "Instant (<2 min)", methods: ["bank"], popular: true },
+  { name: "Philippines", code: "PH", currency: "PHP", region: "apac", rateVsAED: "15.33", speed: "Instant (<2 min)", methods: ["bank"], popular: true },
+  { name: "Bangladesh", code: "BD", currency: "BDT", region: "apac", rateVsAED: "32.10", speed: "Instant (<2 min)", methods: ["bank"] },
+  { name: "Sri Lanka", code: "LK", currency: "LKR", region: "apac", rateVsAED: "83.20", speed: "Instant (<2 min)", methods: ["bank"] },
+  { name: "Nepal", code: "NP", currency: "NPR", region: "apac", rateVsAED: "36.35", speed: "Instant (<2 min)", methods: ["bank"] },
 
   // MENA & Africa
-  { name: "Egypt", code: "EG", currency: "EGP", region: "mena", rateVsUSD: "48.20", speed: "Under 5 mins", methods: ["bank", "cash"], popular: true },
-  { name: "Nigeria", code: "NG", currency: "NGN", region: "mena", rateVsUSD: "1,520", speed: "Instant (<2 min)", methods: ["bank", "mobile", "cash"], popular: true },
+  { name: "Egypt", code: "EG", currency: "EGP", region: "mena", rateVsAED: "13.15", speed: "Under 5 mins", methods: ["bank"], popular: true },
+  { name: "Nigeria", code: "NG", currency: "NGN", region: "mena", rateVsAED: "414.00", speed: "Instant (<2 min)", methods: ["bank"], popular: true },
 ];
 
 const REGIONS = [
@@ -82,7 +82,7 @@ export default function GlobalExplorer() {
             </span>
           </h2>
           <p className="text-slate-600 text-base md:text-lg mt-3 leading-relaxed">
-            Search any country, view live mid-market rates against USD, and see available payout methods in each destination.
+            Search any country, view live mid-market rates against AED, and see available payout methods in each destination.
           </p>
         </div>
 
@@ -95,7 +95,7 @@ export default function GlobalExplorer() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search by country or currency (e.g., India, PHP, Euro, Nigeria, USD)..."
+              placeholder="Search by country or currency (e.g., India, PHP, Euro, Nigeria, AED)..."
               className="w-full bg-slate-50 border border-slate-200 rounded-2xl pl-12 pr-4 py-4 text-sm md:text-base text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#217bc6] focus:bg-white shadow-sm transition-all"
             />
             {searchQuery && (
@@ -157,18 +157,22 @@ export default function GlobalExplorer() {
                         </span>
                       </div>
                     </div>
-
-                    <span className="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-bold flex items-center gap-1">
-                      <Zap size={10} /> {country.speed}
-                    </span>
                   </div>
 
                   {/* Rate Card */}
-                  <div className="bg-white rounded-2xl p-3 border border-slate-200/60 my-3 flex items-center justify-between">
-                    <span className="text-[11px] font-medium text-slate-500">1 USD =</span>
-                    <span className="text-sm font-extrabold text-slate-900">
-                      {country.rateVsUSD} {country.currency}
-                    </span>
+                  <div className="bg-white rounded-2xl p-3 border border-slate-200/60 my-3">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-[11px] font-medium text-slate-500">1 AED =</span>
+                      <span className="text-sm font-extrabold text-slate-900">
+                        {country.rateVsAED} {country.currency}
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-[11px] font-medium text-slate-500">Delivery:</span>
+                      <span className="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-bold flex items-center gap-1">
+                        <Zap size={10} /> {country.speed}
+                      </span>
+                    </div>
                   </div>
 
                   {/* Supported Methods */}

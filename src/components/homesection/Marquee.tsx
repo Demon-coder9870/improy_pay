@@ -22,13 +22,13 @@ const tickerConfig: TickerItem[] = [
   { label: "SECURE & CONFIDENTIAL", type: "text" },
   { label: "GLOBAL OPERATIONS", type: "text" },
   { from: "AED", to: "INR", type: "rate" },
-  { from: "USD", to: "PHP", type: "rate" },
+  { from: "AED", to: "PHP", type: "rate" },
 ];
 
-// Fallback rates (USD base) shown while loading or if API fails
+// Fallback rates (AED base) shown while loading or if API fails
 const fallbackRates: Record<string, number> = {
-  USD: 1, GBP: 0.79, NGN: 1580, EUR: 0.92, PKR: 278,
-  AED: 3.67, INR: 96.45, PHP: 56.50,
+  AED: 1, USD: 0.27, GBP: 0.22, NGN: 430, EUR: 0.25, PKR: 75.8,
+  INR: 22.75, PHP: 15.33,
 };
 
 const API_KEY = process.env.NEXT_PUBLIC_EXCHANGERATE_API_KEY || "8dc667bfc14b4f8679a75507";
@@ -55,7 +55,7 @@ export default function Marquee() {
   const fetchRates = useCallback(async () => {
     try {
       const res = await fetch(
-        `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/USD`
+        `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/AED`
       );
       const data = await res.json();
       if (data.result === "success") {

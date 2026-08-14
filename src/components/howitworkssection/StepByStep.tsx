@@ -117,7 +117,7 @@ export default function StepByStep() {
   const [viewMode, setViewMode] = useState<"wizard" | "timeline">("wizard");
 
   // Step 2 interactive currency selector
-  const [selectedCurrency, setSelectedCurrency] = useState<"EUR" | "INR" | "PHP" | "AED">("EUR");
+  const [selectedCurrency, setSelectedCurrency] = useState<"EUR" | "INR" | "PHP" | "USD">("EUR");
   const [sendAmount, setSendAmount] = useState<number>(1000);
 
   // Step 3 interactive recipient selector
@@ -138,10 +138,10 @@ export default function StepByStep() {
   }, [isAutoPlaying, viewMode]);
 
   const rates: Record<string, { rate: number; code: string; symbol: string; country: string }> = {
-    EUR: { rate: 0.925, code: "eu", symbol: "€", country: "Eurozone" },
-    INR: { rate: 83.45, code: "in", symbol: "₹", country: "India" },
-    PHP: { rate: 56.30, code: "ph", symbol: "₱", country: "Philippines" },
-    AED: { rate: 3.672, code: "ae", symbol: "AED", country: "UAE" }
+    EUR: { rate: 0.25, code: "eu", symbol: "€", country: "Eurozone" },
+    INR: { rate: 22.75, code: "in", symbol: "₹", country: "India" },
+    PHP: { rate: 15.33, code: "ph", symbol: "₱", country: "Philippines" },
+    USD: { rate: 0.27, code: "us", symbol: "$", country: "USA" }
   };
 
   const recipients = [
@@ -431,7 +431,7 @@ export default function StepByStep() {
 
                         {/* Currency Selector Buttons */}
                         <div className="flex items-center gap-2">
-                          {(["EUR", "INR", "PHP", "AED"] as const).map((curr) => (
+                          {(["EUR", "INR", "PHP", "USD"] as const).map((curr) => (
                             <button
                               key={curr}
                               onClick={() => setSelectedCurrency(curr)}
@@ -450,14 +450,14 @@ export default function StepByStep() {
                         {/* Send Amount Input Simulation */}
                         <div className="bg-black/40 rounded-2xl p-4 border border-white/10 space-y-3">
                           <div className="flex justify-between items-center text-xs">
-                            <span className="text-white/60 font-medium">You Send (USD)</span>
-                            <span className="text-[#60A5FA] font-bold">$0 Transfer Fee</span>
+                            <span className="text-white/60 font-medium">You Send (AED)</span>
+                            <span className="text-[#60A5FA] font-bold">AED 0 Transfer Fee</span>
                           </div>
                           <div className="flex justify-between items-center">
-                            <span className="text-2xl font-black text-white">$1,000.00</span>
+                            <span className="text-2xl font-black text-white">AED 1,000.00</span>
                             <span className="px-2.5 py-1 bg-white/10 rounded-lg text-xs font-bold text-white flex items-center gap-1.5">
-                              <FlagIcon code="USD" className="w-4 h-3 rounded-[2px] object-cover shadow-sm" />
-                              USD
+                              <FlagIcon code="AED" className="w-4 h-3 rounded-[2px] object-cover shadow-sm" />
+                              AED
                             </span>
                           </div>
 
@@ -466,7 +466,7 @@ export default function StepByStep() {
                               Recipient Gets ({rates[selectedCurrency].country})
                             </span>
                             <span className="text-white/40 text-[10px]">
-                              1 USD = {rates[selectedCurrency].rate} {selectedCurrency}
+                              1 AED = {rates[selectedCurrency].rate} {selectedCurrency}
                             </span>
                           </div>
                           <div className="flex justify-between items-center">
@@ -587,7 +587,7 @@ export default function StepByStep() {
                           <div className="relative pl-6 space-y-3.5 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-emerald-500/40">
                             {[
                               { title: "Transfer Initiated", time: "10:14 AM", done: true },
-                              { title: "Payment Confirmed ($1,000.00)", time: "10:15 AM", done: true },
+                              { title: "Payment Confirmed (AED 1,000.00)", time: "10:15 AM", done: true },
                               { title: "Converted to €925.00 EUR", time: "10:16 AM", done: true },
                               { title: "Delivered to Recipient Bank", time: "10:17 AM (Instant)", done: true, current: true }
                             ].map((stage, sIdx) => (

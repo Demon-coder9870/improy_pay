@@ -16,58 +16,58 @@ import FlagIcon from "@/components/ui/FlagIcon";
 
 const CORRIDORS = [
   {
-    from: { country: "United States", code: "USD" },
+    from: { country: "United Arab Emirates", code: "AED" },
     to: { country: "India", code: "INR" },
-    rate: "1 USD = 83.45 INR",
+    rate: "1 AED = 22.75 INR",
     speed: "Instant (<90 secs)",
-    volume: "$4.2B+ Volume",
+    volume: "AED 15B+ Volume",
     methods: "UPI & All Major Banks",
-    fee: "$0 Transfer Fee"
+    fee: "0 AED Transfer Fee"
   },
   {
-    from: { country: "United Kingdom", code: "GBP" },
+    from: { country: "United Arab Emirates", code: "AED" },
     to: { country: "Nigeria", code: "NGN" },
-    rate: "1 GBP = 1,935 NGN",
+    rate: "1 AED = 414.00 NGN",
     speed: "Instant (<2 mins)",
-    volume: "$1.8B+ Volume",
+    volume: "AED 6.6B+ Volume",
     methods: "Direct Bank & Mobile Money",
-    fee: "$0 Transfer Fee"
+    fee: "0 AED Transfer Fee"
   },
   {
     from: { country: "United Arab Emirates", code: "AED" },
     to: { country: "Philippines", code: "PHP" },
     rate: "1 AED = 15.33 PHP",
     speed: "Under 60 Seconds",
-    volume: "$2.1B+ Volume",
+    volume: "AED 7.7B+ Volume",
     methods: "GCash, Maya & BDO",
-    fee: "$0 Transfer Fee"
+    fee: "0 AED Transfer Fee"
   },
   {
-    from: { country: "Canada", code: "CAD" },
-    to: { country: "Jamaica", code: "JMD" },
-    rate: "1 CAD = 114.80 JMD",
-    speed: "Under 5 mins",
-    volume: "$650M+ Volume",
-    methods: "NCB, JN Bank & Cash Pickup",
-    fee: "$0 Transfer Fee"
-  },
-  {
-    from: { country: "Eurozone", code: "EUR" },
+    from: { country: "United Arab Emirates", code: "AED" },
     to: { country: "Pakistan", code: "PKR" },
-    rate: "1 EUR = 301.20 PKR",
+    rate: "1 AED = 75.80 PKR",
     speed: "Instant (<2 mins)",
-    volume: "$1.2B+ Volume",
+    volume: "AED 4.4B+ Volume",
     methods: "1Link, Raast & JazzCash",
-    fee: "$0 Transfer Fee"
+    fee: "0 AED Transfer Fee"
   },
   {
-    from: { country: "Australia", code: "AUD" },
-    to: { country: "Vietnam", code: "VND" },
-    rate: "1 AUD = 16,740 VND",
+    from: { country: "United Arab Emirates", code: "AED" },
+    to: { country: "Bangladesh", code: "BDT" },
+    rate: "1 AED = 32.10 BDT",
+    speed: "Under 5 mins",
+    volume: "AED 2.4B+ Volume",
+    methods: "bKash & Bank Transfer",
+    fee: "0 AED Transfer Fee"
+  },
+  {
+    from: { country: "United Arab Emirates", code: "AED" },
+    to: { country: "Egypt", code: "EGP" },
+    rate: "1 AED = 13.15 EGP",
     speed: "Instant (<2 mins)",
-    volume: "$900M+ Volume",
-    methods: "Napas247 & MoMo",
-    fee: "$0 Transfer Fee"
+    volume: "AED 3.3B+ Volume",
+    methods: "Bank Transfer & Cash",
+    fee: "0 AED Transfer Fee"
   }
 ];
 

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -72,7 +72,7 @@ function PhoneMockup() {
               <p className="text-[9px] text-[--text-muted]">Just now</p>
             </div>
           </div>
-          <p className="text-[10px] text-[--text-body]">$500 → India 🇮🇳</p>
+          <p className="text-[10px] text-[--text-body]">AED 500 → India 🇮🇳</p>
           <div className="flex items-center gap-0.5 mt-1.5">
             {[1, 2, 3, 4, 5].map((s) => (
               <Sparkles key={s} size={8} className="text-amber-400 fill-amber-400" />
@@ -87,7 +87,7 @@ function PhoneMockup() {
         transition={{ duration: 0.7, delay: 1.2 }}
         className="absolute -right-2 md:-right-12 bottom-[35%] z-20 hidden md:block"
       >
-        <div className="bg-white rounded-2xl shadow-elevated p-3.5 w-[155px] border border-black/[0.04]">
+        <div className="bg-white rounded-2xl shadow-elevated p-3.5 w-max pr-5 border border-black/[0.04]">
           <div className="flex items-center gap-2 mb-1.5">
             <div className="w-7 h-7 rounded-full bg-blue-50 flex items-center justify-center">
               <Globe size={12} className="text-blue-600" />
@@ -95,7 +95,7 @@ function PhoneMockup() {
             <p className="text-[11px] font-bold text-[--text-primary]">9+ Countries</p>
           </div>
           <div className="flex -space-x-1.5">
-            {["🇺🇸", "🇬🇧", "🇮🇳", "🇦🇪", "🇸🇬", "🇨🇦"].map((f, i) => (
+            {["🇮🇳", "🇳🇵", "🇵🇰", "🇧🇩", "🇱🇰", "🇪🇬", "🇵🇭", "🇳🇬", "🇿🇦"].map((f, i) => (
               <span key={i} className="text-sm bg-gray-50 rounded-full w-5 h-5 flex items-center justify-center ring-1 ring-white text-[10px]">{f}</span>
             ))}
             <span className="text-[9px] font-bold text-[--text-muted] bg-gray-50 rounded-full w-5 h-5 flex items-center justify-center ring-1 ring-white">+</span>
