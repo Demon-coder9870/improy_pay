@@ -146,27 +146,15 @@ export default function HeroSection() {
 
             <motion.div
               custom={2} variants={fadeUp} initial="hidden" animate="visible"
-              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 mb-10 sm:mb-12"
+              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10 sm:mb-12"
             >
-              <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto">
-                <Link href="#download-android" className="flex items-center justify-center sm:justify-start gap-2.5 px-4 py-2 bg-white border border-slate-800 rounded-lg text-slate-900 hover:bg-slate-50 transition-all active:scale-95 w-full sm:w-[170px]">
-                  <Play className="fill-slate-900 w-7 h-7 stroke-none" />
-                  <div className="flex flex-col items-start leading-none">
-                    <span className="text-[10px] font-semibold tracking-wide uppercase">Get it on</span>
-                    <span className="text-[1.05rem] font-bold tracking-tight mt-[1px]">Google Play</span>
-                  </div>
-                </Link>
-                
-                <Link href="#download-ios" className="flex items-center justify-center sm:justify-start gap-2.5 px-4 py-2 bg-white border border-slate-800 rounded-lg text-slate-900 hover:bg-slate-50 transition-all active:scale-95 w-full sm:w-[170px]">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" className="w-7 h-7 fill-slate-900"><path d="M129.6 86.8c-.2-17.7 14.5-28.1 15.2-28.6-8.2-12-21-13.8-25.6-14-11-.1-21.5 7.5-27.1 7.5-5.6 0-14.2-7.4-23.3-7.2-11.9.2-23 6.9-29.2 17.5-12.4 21.6-3.2 53.6 8.9 71 6 8.5 12.8 17.9 22.1 17.5 8.9-.4 12.4-5.8 23.2-5.8 10.7 0 13.8 5.8 23.3 5.6 9.7-.2 15.6-8.6 21.5-17.2 6.8-9.8 9.6-19.3 9.7-19.8-.2-.1-18.4-7-18.7-26.5zM103 26.6C107.9 20.7 111.1 12.5 110.2 4c-7.3.3-16 4.9-21.1 10.8-4.5 5.2-8.3 13.6-7.2 21.9 8.2.6 16.2-4.1 21.1-10.1z"/></svg>
-                  <div className="flex flex-col items-start leading-none">
-                    <span className="text-[10px] font-semibold tracking-wide">Download on the</span>
-                    <span className="text-[1.05rem] font-bold tracking-tight mt-[1px]">App Store</span>
-                  </div>
-                </Link>
-              </div>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
-                <Link href="#how-it-works" className="btn-ghost w-full sm:w-auto py-3.5 px-7 text-base rounded-full bg-white hover:bg-slate-50">
+                <Link href="#download" className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6fc2] via-[#217bc6] to-[#398ddb] hover:opacity-90 text-white font-bold py-3.5 px-8 rounded-full transition-all shadow-md shadow-blue-500/25 w-full sm:w-auto">
+                  Download the app <ArrowRight size={18} />
+                </Link>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
+                <Link href="#how-it-works" className="flex items-center justify-center font-bold text-slate-800 bg-white border border-slate-100 hover:border-slate-200 hover:bg-slate-50 py-3.5 px-8 rounded-full transition-all shadow-[0_2px_8px_rgba(0,0,0,0.04)] w-full sm:w-auto">
                   See how it works
                 </Link>
               </motion.div>
