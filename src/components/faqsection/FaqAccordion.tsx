@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
+import { Search, X } from "lucide-react";
 
 const faqData = [
   {
@@ -179,50 +180,86 @@ const faqData = [
 
 export default function FaqAccordion() {
   const [openIndex, setOpenIndex] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const toggleAccordion = (index: string) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const filteredFaqData = faqData.map(section => ({
+    ...section,
+    questions: section.questions.filter(faq => 
+      faq.q.toLowerCase().includes(searchQuery.toLowerCase()) || 
+      faq.a.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+  })).filter(section => section.questions.length > 0);
+
   return (
     <motion.div 
       variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}
-      className="space-y-12"
+      className="space-y-8 md:space-y-12"
     >
-      {faqData.map((section, sIndex) => (
-        <motion.div variants={fadeUp} key={sIndex}>
-          <h2 className="heading-md mb-6 text-[#217bc6]">{section.category}</h2>
-          <div className="card overflow-hidden">
-            {section.questions.map((faq, qIndex) => {
-              const currentIndex = `${sIndex}-${qIndex}`;
-              const isOpen = openIndex === currentIndex;
-              return (
-                <div key={qIndex} className="faq-item border-b border-slate-200 last:border-0">
-                  <button
-                    onClick={() => toggleAccordion(currentIndex)}
-                    className="w-full text-left px-6 py-5 flex justify-between items-center hover:bg-slate-50 transition-colors focus:outline-none"
-                  >
-                    <span className="font-semibold text-slate-800 pr-8">{faq.q}</span>
-                    <svg
-                      className={`w-5 h-5 text-blue-600 transform transition-transform duration-200 shrink-0 ${isOpen ? "rotate-180" : ""}`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+      <motion.div variants={fadeUp} className="relative max-w-2xl mx-auto mb-8 md:mb-12 group">
+        <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none z-10">
+          <Search size={20} className="text-[#217bc6] opacity-70 group-focus-within:opacity-100 transition-opacity" />
+        </div>
+        <input
+          type="text"
+          placeholder="Search for answers..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="w-full pl-12 pr-12 py-4 rounded-2xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#217bc6]/50 focus:border-[#217bc6] shadow-[0_4px_20px_rgba(33,123,198,0.06)] text-slate-700 bg-white/90 backdrop-blur-md transition-all placeholder:text-slate-400 font-medium"
+        />
+        {searchQuery && (
+          <button 
+            onClick={() => setSearchQuery("")}
+            className="absolute inset-y-0 right-0 pr-4 flex items-center text-slate-400 hover:text-slate-600 transition-colors z-10"
+          >
+            <X size={18} />
+          </button>
+        )}
+      </motion.div>
+
+      {filteredFaqData.length > 0 ? (
+        filteredFaqData.map((section, sIndex) => (
+          <motion.div variants={fadeUp} key={section.category}>
+            <h2 className="heading-md mb-6 text-[#217bc6]">{section.category}</h2>
+            <div className="card overflow-hidden">
+              {section.questions.map((faq, qIndex) => {
+                const currentIndex = `${sIndex}-${qIndex}`;
+                const isOpen = openIndex === currentIndex;
+                return (
+                  <div key={qIndex} className="faq-item border-b border-slate-200 last:border-0">
+                    <button
+                      onClick={() => toggleAccordion(currentIndex)}
+                      className="w-full text-left px-6 py-5 flex justify-between items-center hover:bg-slate-50 transition-colors focus:outline-none"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                  <div
-                    className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 pb-5 opacity-100" : "max-h-0 opacity-0"}`}
-                  >
-                    <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+                      <span className="font-semibold text-slate-800 pr-8">{faq.q}</span>
+                      <svg
+                        className={`w-5 h-5 text-blue-600 transform transition-transform duration-200 shrink-0 ${isOpen ? "rotate-180" : ""}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <div
+                      className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 pb-5 opacity-100" : "max-h-0 opacity-0"}`}
+                    >
+                      <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+                    </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+          </motion.div>
+        ))
+      ) : (
+        <motion.div variants={fadeUp} className="text-center py-12">
+          <p className="text-slate-500 text-lg">No FAQs found matching "{searchQuery}"</p>
         </motion.div>
-      ))}
+      )}
     </motion.div>
   );
 }

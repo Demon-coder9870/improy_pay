@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { fadeUp, staggerContainer } from "@/lib/animations";
 
 const features = [
   {
@@ -49,7 +50,13 @@ export default function WhyChooseUs() {
     <section className="py-14 md:py-20 bg-[#FAFBFE]">
       <div className="container-main">
         {/* Header */}
-        <div className="text-center mb-16 max-w-2xl mx-auto">
+        <motion.div 
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          className="text-center mb-16 max-w-2xl mx-auto"
+        >
           <span className="text-[0.75rem] font-bold tracking-widest text-[#217bc6] uppercase font-mono">
             Why ImproPay
           </span>
@@ -57,14 +64,22 @@ export default function WhyChooseUs() {
             Money that moves <br className="hidden sm:block" />
             the way families do.
           </h2>
-        </div>
+        </motion.div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+        <motion.div 
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr"
+        >
           {features.map((feature, index) => {
             const isActive = activeIdx === index;
             return (
-              <div
+              <motion.div
+                variants={fadeUp}
+                whileHover={{ y: -5, scale: 1.02 }}
                 key={feature.num}
                 onMouseEnter={() => setActiveIdx(index)}
                 onMouseLeave={() => setActiveIdx(1)} // Revert to 2nd card active on mouse leave
@@ -111,10 +126,10 @@ export default function WhyChooseUs() {
                     {feature.description}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

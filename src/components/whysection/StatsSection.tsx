@@ -109,6 +109,7 @@ export default function StatsSection() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
+              whileHover={{ y: -5, scale: 1.02 }}
               className="group"
             >
               <div className="relative rounded-2xl border border-white/[0.06] bg-white/[0.03] backdrop-blur-sm p-6 md:p-8 text-center hover:bg-white/[0.06] hover:border-white/[0.12] transition-all duration-300 h-full">

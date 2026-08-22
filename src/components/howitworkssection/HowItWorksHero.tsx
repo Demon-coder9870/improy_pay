@@ -7,7 +7,7 @@ export default function HowItWorksHero() {
   return (
     <section className="relative overflow-hidden w-full pt-20 pb-16 md:pt-28 md:pb-24 text-center">
       {/* Dynamic Background */}
-      <div className="absolute inset-0 bg-[#f4f7fa] -z-20"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-100 to-slate-200 -z-20"></div>
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-200/20 via-white/40 to-transparent"></div>
         <div className="absolute -top-[300px] -right-[200px] w-[800px] h-[800px] rounded-full bg-blue-300/10 blur-[120px] mix-blend-multiply pointer-events-none animate-pulse-slow"></div>

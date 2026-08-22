@@ -1,10 +1,11 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { fadeUp, staggerContainer } from "@/lib/animations";
 
 const stats = [
-  { value: "9+", label: "Countries reachable" },
+  { value: "9", label: "Countries reachable" },
   { value: "9", label: "Live global corridors" },
   { value: "4", label: "Continents, one team" },
   { value: "4.8★", label: "Loved by senders" },
@@ -21,7 +22,7 @@ const partners = [
     status: "ON THE ROADMAP",
     statusColor: "bg-slate-100 text-slate-600 border border-slate-200/50",
     title: "Remittance network",
-    desc: "Direct cross-border payouts scaling toward 196 corridors as we grow our internal reach.",
+    desc: "Direct cross-border payouts expanding across global corridors as we grow our internal reach.",
   },
 ];
 
@@ -33,11 +34,19 @@ export default function SecuritySection() {
       <div className="container-main">
         
         {/* Stats Row (Top) */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        <motion.div 
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-20"
+        >
           {stats.map((stat, i) => {
             const isActive = activeStatIdx === i;
             return (
-              <div
+              <motion.div
+                variants={fadeUp}
+                whileHover={{ y: -5, scale: 1.02 }}
                 key={i}
                 onMouseEnter={() => setActiveStatIdx(i)}
                 onMouseLeave={() => setActiveStatIdx(1)}
@@ -55,16 +64,22 @@ export default function SecuritySection() {
               }`}>
                 {stat.label}
               </p>
-            </div>
+            </motion.div>
             );
           })}
-        </div>
+        </motion.div>
 
         {/* Info & Partners Section (Bottom) */}
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           {/* Left: Heading and text */}
-          <div className="lg:col-span-5 max-w-md">
+          <motion.div 
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            className="lg:col-span-5 max-w-md"
+          >
             <span className="text-[0.75rem] font-bold tracking-widest text-[#217bc6] uppercase font-mono block mb-4">
               Trusted Rails
             </span>
@@ -74,7 +89,7 @@ export default function SecuritySection() {
             <p className="body-md text-[--text-body]">
               A reliable, compliant network under the hood — so speed and security are never a trade-off.
             </p>
-          </div>
+          </motion.div>
 
           {/* Right: Partner Cards */}
           <div className="lg:col-span-7 grid md:grid-cols-2 gap-6 w-full">

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
@@ -41,10 +41,10 @@ const BENEFITS = [
   },
   {
     icon: Globe2,
-    badge: "8+ Countries",
+    badge: "9 Countries",
     title: "Global Payout Network",
     description:
-      "Send money to over 8 countries at guaranteed, competitive mid-market exchange rates.",
+      "Send money to 9 countries at guaranteed, competitive mid-market exchange rates.",
     gradient: "from-[#8b5cf6] to-[#6366f1]",
     glowColor: "rgba(139, 92, 246, 0.22)",
     accentColor: "text-purple-600",

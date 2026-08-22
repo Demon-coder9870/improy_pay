@@ -12,7 +12,7 @@ import WhyCTA from "@/components/whysection/WhyCTA";
 export const metadata: Metadata = {
   title: "Why ImproPay – Fast, Fair & Secure Global Transfers",
   description:
-    "Discover why ImproPay is the smart choice for international money transfers. Transparent fees, instant speed, bank-level security, and 150+ countries.",
+    "Discover why ImproPay is the smart choice for international money transfers. Transparent fees, instant speed, bank-level security, and 9 countries.",
   openGraph: {
     title: "Why ImproPay",
     description:

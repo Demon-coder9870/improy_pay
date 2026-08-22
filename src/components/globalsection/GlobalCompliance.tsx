@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import {
@@ -69,6 +69,7 @@ export default function GlobalCompliance() {
             <motion.div
               key={idx}
               variants={fadeUp}
+              whileHover={{ y: -5, scale: 1.02 }}
               className="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex items-start justify-between"
             >
               <div>
@@ -93,20 +94,26 @@ export default function GlobalCompliance() {
             <p className="text-xs text-slate-500 mt-1">Every transfer adheres to stringent banking safeguards.</p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <motion.div 
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          >
             {SECURITY_PILLARS.map((pillar, pIdx) => {
               const Icon = pillar.icon;
               return (
-                <div key={pIdx} className="space-y-2.5">
-                  <div className="w-10 h-10 rounded-xl bg-blue-50 text-[#217bc6] flex items-center justify-center font-bold">
+                <motion.div variants={fadeUp} key={pIdx} className="space-y-2.5">
+                  <motion.div whileHover={{ scale: 1.1, rotate: 5 }} className="w-10 h-10 rounded-xl bg-blue-50 text-[#217bc6] flex items-center justify-center font-bold">
                     <Icon size={20} />
-                  </div>
+                  </motion.div>
                   <h4 className="font-bold text-sm text-slate-900">{pillar.title}</h4>
                   <p className="text-xs text-slate-500 leading-relaxed">{pillar.desc}</p>
-                </div>
+                </motion.div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

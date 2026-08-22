@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
@@ -35,7 +35,7 @@ export default function LeadershipTeam() {
             { 
               name: "Elena Rodriguez", 
               role: "Chief Operations Officer", 
-              bio: "Expert in global compliance and scaling financial networks across 9+ countries.",
+              bio: "Expert in global compliance and scaling financial networks across 9 countries.",
               img: "https://i.pravatar.cc/150?img=5" 
             },
             { 
@@ -45,7 +45,7 @@ export default function LeadershipTeam() {
               img: "https://i.pravatar.cc/150?img=68" 
             },
           ].map((member, i) => (
-            <motion.div variants={fadeUp} key={i} className="group flex flex-col items-center text-center p-6 bg-white rounded-3xl border border-slate-200 hover:border-[#217bc6]/30 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative overflow-hidden">
+            <motion.div variants={fadeUp} whileHover={{ y: -8, scale: 1.02 }} key={i} className="group flex flex-col items-center text-center p-6 bg-white rounded-3xl border border-slate-200 hover:border-[#217bc6]/30 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-slate-50 to-transparent -z-10"></div>
               
               <div className="relative w-28 h-28 mx-auto mb-6">

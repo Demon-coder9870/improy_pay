@@ -44,10 +44,10 @@ export default function ContactMethods() {
           <p className="text-sm text-slate-600 mb-6 leading-relaxed sm:h-11">For data access requests, KYC compliance, or privacy questions.</p>
         </div>
         <a
-          href="mailto:Contact@impropay.global"
+          href="mailto:Support@impropay.global"
           className="inline-flex items-center gap-1.5 text-sm text-[#217bc6] font-extrabold group-hover:text-[#1d6fc2] hover:underline"
         >
-          <span>Contact@impropay.global</span>
+          <span>Support@impropay.global</span>
           <ArrowUpRight size={15} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
         </a>
       </motion.div>

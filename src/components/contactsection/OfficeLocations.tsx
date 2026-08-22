@@ -49,8 +49,9 @@ export default function OfficeLocations() {
         {offices.map((office, idx) => (
           <motion.div
             variants={fadeUp}
+            whileHover={{ y: -5, scale: 1.02 }}
             key={idx}
-            className="group relative rounded-2xl p-5 md:p-6 bg-white/95 hover:bg-white backdrop-blur-2xl border border-white/90 hover:border-white shadow-[0_12px_32px_rgba(0,0,0,0.12),inset_0_1px_2px_rgba(255,255,255,1)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-1"
+            className="group relative rounded-2xl p-5 md:p-6 bg-white/95 hover:bg-white backdrop-blur-2xl border border-white/90 hover:border-white shadow-[0_12px_32px_rgba(0,0,0,0.12),inset_0_1px_2px_rgba(255,255,255,1)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.18)] transition-all duration-300"
           >
             <div className="flex items-start gap-4">
               {/* Crisp Flag Image Container */}

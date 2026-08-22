@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -17,7 +17,7 @@ import {
 
 export default function GlobalHero() {
   const stats = [
-    { value: "9+", label: "Countries & Territories", icon: Globe2 },
+    { value: "9", label: "Countries & Territories", icon: Globe2 },
     { value: "70+", label: "Currencies Supported", icon: TrendingUp },
     { value: "350k+", label: "Cash Pickup Points", icon: MapPin },
     { value: "99.9%", label: "Instant Delivery Rate", icon: Zap }
@@ -70,7 +70,7 @@ export default function GlobalHero() {
             >
               Connect with loved ones in{" "}
               <span className="bg-gradient-to-r from-[#1d6fc2] via-[#217bc6] to-[#398ddb] bg-clip-text text-transparent">
-                9+ countries
+                9 countries
               </span>
             </motion.h1>
 

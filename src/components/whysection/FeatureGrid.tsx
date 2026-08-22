@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import {
   ShieldCheck,
@@ -52,7 +52,7 @@ const features = [
     badge: "70+ Currencies",
     title: "Global Reach",
     description:
-      "Send money to over 150 countries in 70+ currencies. Family in India or a partner in Europe — we connect the world.",
+      "Send money to 9 countries in 70+ currencies. Family in India or a partner in Europe — we connect the world.",
     gradient: "from-[#f59e0b] to-[#ea580c]",
     glowColor: "rgba(245, 158, 11, 0.22)",
     dotColor: "bg-amber-500",

@@ -24,7 +24,7 @@ const DELIVERY_METHODS = [
     tagline: "Direct to 100+ major global banking networks",
     icon: Building2,
     speed: "Instant to Same-Day",
-    coverage: "150+ Countries",
+    coverage: "9 Countries",
     fee: "$0 Hidden Fees",
     accent: "from-blue-600 to-cyan-500",
     description:

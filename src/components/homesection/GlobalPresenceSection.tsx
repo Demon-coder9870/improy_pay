@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
+import FlagIcon from "@/components/ui/FlagIcon";
 
 const offices = [
   {
@@ -72,9 +73,7 @@ export default function GlobalPresenceSection() {
               className="bg-white p-6 md:p-8 rounded-[24px] shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-8 h-6 rounded overflow-hidden shadow-sm shrink-0 flex items-center justify-center bg-[#1a73e8]">
-                  <span className="text-white text-[10px] font-bold tracking-wider">{office.code}</span>
-                </div>
+                <FlagIcon code={office.code} className="w-8 h-6 rounded object-cover shadow-sm shrink-0 border border-slate-200" alt={office.country} />
                 <span className="font-bold text-slate-900 text-sm">{office.country}</span>
               </div>
 

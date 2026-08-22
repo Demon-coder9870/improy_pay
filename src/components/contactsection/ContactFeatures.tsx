@@ -22,7 +22,7 @@ const features = [
   {
     icon: Globe,
     title: "Global Reach",
-    desc: "Licensed operations serving 180+ countries worldwide.",
+    desc: "Licensed operations serving 9 countries worldwide.",
     color: "text-blue-200",
     bgColor: "bg-blue-300/20 border-blue-200/30",
   },
@@ -48,7 +48,8 @@ export default function ContactFeatures() {
             key={feat.title}
             custom={idx}
             variants={fadeUp}
-            className="group relative rounded-3xl p-7 bg-white/10 hover:bg-white/15 backdrop-blur-xl border border-white/20 hover:border-white/35 text-center text-white shadow-[0_12px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-all duration-300"
+            whileHover={{ y: -5, scale: 1.02 }}
+            className="group relative rounded-3xl p-7 bg-white/10 hover:bg-white/15 backdrop-blur-xl border border-white/20 hover:border-white/35 text-center text-white shadow-[0_12px_32px_rgba(0,0,0,0.1)] transition-all duration-300"
           >
             <div className={`w-12 h-12 mx-auto rounded-2xl ${feat.bgColor} border flex items-center justify-center mb-5 shadow-xs group-hover:scale-110 transition-transform duration-300`}>
               <Icon size={22} className={feat.color} />

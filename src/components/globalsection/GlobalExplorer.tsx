@@ -32,15 +32,16 @@ interface CountryInfo {
 const COUNTRIES_DATA: CountryInfo[] = [
   // APAC
   { name: "India", code: "IN", currency: "INR", region: "apac", rateVsAED: "22.75", speed: "Instant (<2 min)", methods: ["bank"], popular: true },
-  { name: "Pakistan", code: "PK", currency: "PKR", region: "apac", rateVsAED: "75.80", speed: "Instant (<2 min)", methods: ["bank"], popular: true },
-  { name: "Philippines", code: "PH", currency: "PHP", region: "apac", rateVsAED: "15.33", speed: "Instant (<2 min)", methods: ["bank"], popular: true },
-  { name: "Bangladesh", code: "BD", currency: "BDT", region: "apac", rateVsAED: "32.10", speed: "Instant (<2 min)", methods: ["bank"] },
   { name: "Sri Lanka", code: "LK", currency: "LKR", region: "apac", rateVsAED: "83.20", speed: "Instant (<2 min)", methods: ["bank"] },
   { name: "Nepal", code: "NP", currency: "NPR", region: "apac", rateVsAED: "36.35", speed: "Instant (<2 min)", methods: ["bank"] },
+  { name: "Bangladesh", code: "BD", currency: "BDT", region: "apac", rateVsAED: "32.10", speed: "Instant (<2 min)", methods: ["bank"] },
+  { name: "Pakistan", code: "PK", currency: "PKR", region: "apac", rateVsAED: "75.80", speed: "Instant (<2 min)", methods: ["bank"], popular: true },
+  { name: "Philippines", code: "PH", currency: "PHP", region: "apac", rateVsAED: "15.33", speed: "Instant (<2 min)", methods: ["bank"], popular: true },
 
   // MENA & Africa
-  { name: "Egypt", code: "EG", currency: "EGP", region: "mena", rateVsAED: "13.15", speed: "Under 5 mins", methods: ["bank"], popular: true },
-  { name: "Nigeria", code: "NG", currency: "NGN", region: "mena", rateVsAED: "414.00", speed: "Instant (<2 min)", methods: ["bank"], popular: true },
+  { name: "Egypt", code: "EG", currency: "EGP", region: "mena", rateVsAED: "13.15", speed: "Under 5 mins", methods: ["bank", "cash"], popular: true },
+  { name: "Nigeria", code: "NG", currency: "NGN", region: "mena", rateVsAED: "414.00", speed: "Instant (<2 min)", methods: ["bank", "mobile"], popular: true },
+  { name: "South Africa", code: "ZA", currency: "ZAR", region: "mena", rateVsAED: "5.10", speed: "Instant (<2 min)", methods: ["bank"] },
 ];
 
 const REGIONS = [

@@ -8,13 +8,14 @@ import FlagIcon from "@/components/ui/FlagIcon";
 
 const countries = [
   { name: "India", code: "IN", currency: "INR", rate: "22.75", transfers: "2M+ monthly" },
-  { name: "UAE", code: "AE", currency: "AED", rate: "1.00", transfers: "800K+ monthly" },
-  { name: "USA", code: "US", currency: "USD", rate: "0.27", transfers: "1.5M+ monthly" },
-  { name: "UK", code: "GB", currency: "GBP", rate: "0.22", transfers: "600K+ monthly" },
-  { name: "Canada", code: "CA", currency: "CAD", rate: "0.37", transfers: "400K+ monthly" },
-  { name: "Australia", code: "AU", currency: "AUD", rate: "0.42", transfers: "350K+ monthly" },
-  { name: "Singapore", code: "SG", currency: "SGD", rate: "0.36", transfers: "500K+ monthly" },
-  { name: "Saudi Arabia", code: "SA", currency: "SAR", rate: "1.02", transfers: "700K+ monthly" },
+  { name: "Sri Lanka", code: "LK", currency: "LKR", rate: "83.20", transfers: "800K+ monthly" },
+  { name: "Nepal", code: "NP", currency: "NPR", rate: "36.35", transfers: "600K+ monthly" },
+  { name: "Bangladesh", code: "BD", currency: "BDT", rate: "32.10", transfers: "1.5M+ monthly" },
+  { name: "Egypt", code: "EG", currency: "EGP", rate: "13.15", transfers: "500K+ monthly" },
+  { name: "Pakistan", code: "PK", currency: "PKR", rate: "75.80", transfers: "400K+ monthly" },
+  { name: "Philippines", code: "PH", currency: "PHP", rate: "15.33", transfers: "350K+ monthly" },
+  { name: "Nigeria", code: "NG", currency: "NGN", rate: "414.00", transfers: "700K+ monthly" },
+  { name: "South Africa", code: "ZA", currency: "ZAR", rate: "5.10", transfers: "400K+ monthly" },
 ];
 
 export default function CountriesSection() {
@@ -34,7 +35,7 @@ export default function CountriesSection() {
           <p className="label-sm mb-4">Global Reach</p>
           <h2 className="section-heading mb-4">Countries We Support</h2>
           <p className="body-lg mx-auto text-center max-w-[500px]">
-            Send money to 9+ countries. Here are our most popular destinations.
+            Send money to 9 countries. Here are our most popular destinations.
           </p>
         </motion.div>
 
@@ -50,7 +51,7 @@ export default function CountriesSection() {
             <div className="inline-flex items-center gap-2.5 bg-white border-2 border-[#217bc6]/20 rounded-full px-5 py-2.5 shadow-card">
               <div className="w-2.5 h-2.5 rounded-full bg-[#217bc6] animate-pulse-ring" />
               <span className="font-bold text-[#217bc6] text-[0.8125rem]">ImproPay Network</span>
-              <span className="text-[--text-muted] text-[0.75rem] hidden sm:inline">• 10+ Countries</span>
+              <span className="text-[--text-muted] text-[0.75rem] hidden sm:inline">• 9 Countries</span>
             </div>
           </div>
 
@@ -112,7 +113,7 @@ export default function CountriesSection() {
               whileTap={{ scale: 0.95 }}
               className="btn-ghost"
             >
-              View All 9+ Countries
+              View All 9 Countries
               <ArrowRight size={14} />
             </motion.button>
           </Link>
