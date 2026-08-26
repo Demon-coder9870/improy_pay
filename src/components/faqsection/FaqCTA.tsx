@@ -19,7 +19,7 @@ export default function FaqCTA() {
       
       <div className="relative z-10 max-w-[640px] mx-auto">
         <span className="text-[0.75rem] font-bold tracking-widest text-white/80 uppercase font-mono block mb-5">
-          24/7 Live Assistance
+          Live Assistance
         </span>
         
         <h2 className="text-[2.25rem] md:text-[3.25rem] font-extrabold text-white leading-[1.1] tracking-tight mb-5">

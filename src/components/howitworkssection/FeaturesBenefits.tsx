@@ -77,7 +77,7 @@ const BENEFITS = [
   },
   {
     icon: Headphones,
-    badge: "24/7 Support",
+    badge: "Dedicated Support",
     title: "Dedicated Human Support",
     description:
       "Reach a real person anytime via live chat, WhatsApp, or phone, whenever you need help with a transfer.",

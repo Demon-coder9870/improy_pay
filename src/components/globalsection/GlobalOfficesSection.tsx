@@ -118,7 +118,7 @@ export default function GlobalOfficesSection() {
                   <div className="text-[11px] text-white/60">Canary Wharf, London & Manhattan, NYC</div>
                 </div>
                 <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-lg text-xs font-bold">
-                  24/7 Operations
+                  Global Operations
                 </span>
               </div>
             </div>
@@ -136,7 +136,7 @@ export default function GlobalOfficesSection() {
               {[
                 "Direct local clearing integrations with central banks",
                 "Segregated client money accounts held at tier-1 international banks",
-                "24/7 localized support teams across multiple timezones in 10+ languages"
+                "Dedicated localized support teams across multiple timezones in 10+ languages"
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <div className="w-5 h-5 rounded-full bg-blue-100 text-[#217bc6] flex items-center justify-center shrink-0 mt-0.5">

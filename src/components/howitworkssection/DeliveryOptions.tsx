@@ -37,30 +37,12 @@ const DELIVERY_METHODS = [
     partners: ["JPMorgan", "Barclays", "HDFC Bank", "BNP Paribas", "Deutsche Bank"]
   },
   {
-    id: "mobile",
-    title: "Digital Wallets & Mobile Apps",
-    tagline: "Lightning-fast transfers directly to digital accounts",
-    icon: Smartphone,
-    speed: "Instant Transfer",
-    coverage: "40+ E-Wallets",
-    fee: "$0 Hidden Fees",
-    accent: "from-emerald-500 to-teal-600",
-    description:
-      "Send money straight to digital wallets and mobile phone numbers. The recipient gets an instant push notification and SMS alert.",
-    keyBenefits: [
-      "Supported on GCash, M-Pesa, Paytm, MoMo, Maya, and Orange Money",
-      "Zero paperwork required for the recipient",
-      "Available 24/7, 365 days a year including weekends & bank holidays"
-    ],
-    partners: ["GCash", "M-Pesa", "Paytm", "Maya", "MoMo"]
-  },
-  {
     id: "cash",
     title: "In-Person Cash Collection",
     tagline: "Collect cash instantly at our trusted local partners",
     icon: MapPin,
     speed: "Ready in Minutes",
-    coverage: "350,000+ Agents",
+    coverage: "Global Cash Agents",
     fee: "$0 Hidden Fees",
     accent: "from-purple-600 to-pink-500",
     description:
@@ -205,7 +187,7 @@ export default function DeliveryOptions() {
               {/* High-res generated delivery image */}
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/howitworks_delivery.png"
+                  src="/images/howitworks_delivery_new.jpg"
                   alt="Global money delivery options - Bank, Mobile Money, and Cash Pickup"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"
@@ -221,7 +203,7 @@ export default function DeliveryOptions() {
                     </div>
                     <div>
                       <div className="text-xs font-bold text-white">Global Payout Coverage</div>
-                      <div className="text-[11px] text-white/60">350,000+ Agent & Bank Networks</div>
+                      <div className="text-[11px] text-white/60">Extensive Bank & Cash Networks</div>
                     </div>
                   </div>
                   <div className="text-right">
@@ -229,21 +211,6 @@ export default function DeliveryOptions() {
                     <div className="text-[10px] text-white/50">Real-time settlement</div>
                   </div>
                 </div>
-              </div>
-
-              {/* Quick Partner Badges Bar Below Image */}
-              <div className="px-4 py-3 bg-slate-900/60 rounded-xl mt-2 flex flex-wrap items-center justify-between gap-2 text-xs text-white/70">
-                <span className="font-semibold text-white/40 uppercase text-[10px] tracking-wider">
-                  Supported Networks:
-                </span>
-                {current.partners.map((partner, pIdx) => (
-                  <span
-                    key={pIdx}
-                    className="px-2.5 py-0.5 rounded-lg bg-white/[0.06] text-white/80 font-medium text-[11px] border border-white/5"
-                  >
-                    {partner}
-                  </span>
-                ))}
               </div>
             </div>
           </motion.div>

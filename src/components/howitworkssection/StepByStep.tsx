@@ -55,7 +55,7 @@ const STEPS: StepData[] = [
     accentColor: "from-blue-600 to-cyan-500",
     bgGradient: "bg-blue-500/10",
     highlights: [
-      "Instant sign-up using Google, Apple, or email",
+      "Instant sign-up using email",
       "Automated 90-second biometric KYC verification",
       "256-bit AES encryption & ISO 27001 certified",
       "Zero registration fees, zero maintenance charges"
@@ -72,16 +72,15 @@ const STEPS: StepData[] = [
     bgGradient: "bg-cyan-500/10",
     highlights: [
       "Real-time mid-market exchange rates updated every 3 seconds",
-      "100% transparent pricing — $0 hidden markup or surprise fees",
-      "Delivery options: Direct Bank, Mobile Wallet, or Cash Pickup",
-      "Rate lock guarantee for 24 hours during transfer"
+      "100% transparent pricing — 0 AED hidden markup or surprise fees",
+      "Delivery options: Direct Bank or Cash Pickup"
     ]
   },
   {
     id: 3,
     badge: "Step 03",
     title: "Add Recipient Information",
-    shortDesc: "Enter bank details, mobile wallet ID, or choose from your saved contacts in one tap.",
+    shortDesc: "Enter bank details in one tap.",
     estimatedTime: "30 secs",
     icon: Users,
     accentColor: "from-indigo-600 to-blue-500",
@@ -90,7 +89,7 @@ const STEPS: StepData[] = [
       "Auto-validation for IBAN, SWIFT/BIC, Routing & UPI numbers",
       "1-click selection from recent or favourite recipients",
       "Automatic recipient currency and network compatibility check",
-      "Free real-time SMS & WhatsApp notification alerts to receiver"
+      "Free real-time SMS notification alerts to receiver"
     ]
   },
   {
@@ -103,7 +102,7 @@ const STEPS: StepData[] = [
     accentColor: "from-emerald-500 to-teal-600",
     bgGradient: "bg-emerald-500/10",
     highlights: [
-      "Pay with debit/credit card, bank wire, Apple Pay, or Google Pay",
+      "Pay with debit/credit card or bank wire",
       "Live 4-stage tracking dashboard from send to delivery",
       "Instant push notifications the moment funds are received",
       "Downloadable transfer receipt for your records"
@@ -114,7 +113,7 @@ const STEPS: StepData[] = [
 export default function StepByStep() {
   const [activeStep, setActiveStep] = useState<number>(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState<boolean>(false);
-  const [viewMode, setViewMode] = useState<"wizard" | "timeline">("wizard");
+  const [viewMode, setViewMode] = useState<"wizard" | "timeline">("timeline");
 
   // Step 2 interactive currency selector
   const [selectedCurrency, setSelectedCurrency] = useState<"EUR" | "INR" | "PHP" | "USD">("EUR");

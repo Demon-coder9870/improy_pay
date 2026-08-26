@@ -8,7 +8,7 @@ import ContactFeatures from "@/components/contactsection/ContactFeatures";
 
 export const metadata = {
   title: "Contact Us | ImproPay",
-  description: "Get in touch with ImproPay's support team. We're here to help you 24/7 with your international money transfers.",
+  description: "Get in touch with ImproPay's support team. We're here to help you with your international money transfers.",
 };
 
 export default function ContactPage() {

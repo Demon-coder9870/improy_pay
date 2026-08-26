@@ -37,7 +37,7 @@ export default function WhyHero() {
           >
             <TrendingUp size={14} className="text-[#217bc6]" />
             <span className="text-[0.75rem] font-bold text-[#217bc6] tracking-wide uppercase">
-              Trusted by 2M+ users worldwide
+              Trusted across 9 payment corridors
             </span>
           </motion.div>
 

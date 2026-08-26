@@ -1,75 +1,34 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
-import { useRef, useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { fadeUp } from "@/lib/animations";
 
 const stats = [
   {
-    value: 8,
-    suffix: "+",
-    label: "Countries",
-    sub: "Worldwide reach",
+    value: "9",
+    label: "Corridors",
+    sub: "Global reach",
     icon: "🌍",
   },
   {
-    value: 8,
-    suffix: "+",
-    label: "Currencies",
-    sub: "Local payouts",
+    value: "Zero",
+    label: "Markups",
+    sub: "Pricing clarity",
     icon: "💱",
   },
   {
-    value: 5,
-    suffix: "k",
-    label: "Customers",
-    sub: "And growing daily",
-    icon: "👥",
+    value: "Top",
+    label: "Security",
+    sub: "Military-grade",
+    icon: "🛡️",
   },
   {
-    value: 20,
-    suffix: "s",
-    label: "Avg. Speed",
-    sub: "Most corridors",
+    value: "VIP",
+    label: "Support",
+    sub: "Real experts",
     icon: "⚡",
   },
 ];
-
-function Counter({
-  value,
-  suffix,
-}: {
-  value: number;
-  suffix: string;
-}) {
-  const [count, setCount] = useState(0);
-  const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
-
-  useEffect(() => {
-    if (!isInView) return;
-    let start = 0;
-    const duration = 2000;
-    const step = value / (duration / 16);
-    const id = setInterval(() => {
-      start += step;
-      if (start >= value) {
-        setCount(value);
-        clearInterval(id);
-      } else {
-        setCount(Math.floor(start));
-      }
-    }, 16);
-    return () => clearInterval(id);
-  }, [isInView, value]);
-
-  return (
-    <span ref={ref}>
-      {count}
-      {suffix}
-    </span>
-  );
-}
 
 export default function StatsSection() {
   return (
@@ -90,13 +49,13 @@ export default function StatsSection() {
           className="text-center mb-14"
         >
           <span className="text-[0.75rem] font-bold tracking-widest text-cyan-400 uppercase font-mono mb-3 block">
-            By the Numbers
+            Our DNA
           </span>
           <h2 className="section-heading text-white mb-4">
-            Trusted by millions globally
+            Rewriting the rules of global money
           </h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            Our numbers speak for themselves.
+            Engineered for speed, built on trust, and relentlessly focused on your peace of mind.
           </p>
         </motion.div>
 
@@ -115,7 +74,7 @@ export default function StatsSection() {
               <div className="relative rounded-2xl border border-white/[0.06] bg-white/[0.03] backdrop-blur-sm p-6 md:p-8 text-center hover:bg-white/[0.06] hover:border-white/[0.12] transition-all duration-300 h-full">
                 <span className="text-2xl md:text-3xl mb-3 block">{s.icon}</span>
                 <div className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-cyan-300 via-blue-400 to-[#398ddb] bg-clip-text text-transparent mb-1">
-                  <Counter value={s.value} suffix={s.suffix} />
+                  {s.value}
                 </div>
                 <p className="text-white font-bold text-sm mb-0.5">{s.label}</p>
                 <p className="text-slate-500 text-xs">{s.sub}</p>

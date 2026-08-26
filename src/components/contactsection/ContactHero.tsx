@@ -38,7 +38,7 @@ export default function ContactHero() {
         animate="visible"
         className="text-lg md:text-xl text-blue-100/90 max-w-xl mx-auto leading-relaxed font-normal"
       >
-        Need help with a transfer, business account, or custom partnership? Our dedicated global support team is ready 24/7.
+        Need help with a transfer, business account, or custom partnership? Our dedicated global support team is ready to help.
       </motion.p>
     </div>
   );

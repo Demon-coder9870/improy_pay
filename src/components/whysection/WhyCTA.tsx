@@ -31,7 +31,7 @@ export default function WhyCTA() {
             </h2>
             
             <p className="text-[0.95rem] md:text-[1.0625rem] text-blue-50/90 mb-10 max-w-lg mx-auto leading-relaxed">
-              Join the millions of people who have switched to ImproPay for guaranteed real exchange rates and 24/7 human care.
+              Join the millions of people who have switched to ImproPay for guaranteed real exchange rates and dedicated human care.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

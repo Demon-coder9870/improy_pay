@@ -163,8 +163,8 @@ const faqData = [
         a: "For basic assistance, contact us through the in-app chat. For transaction-specific or detailed support, email support@impropay.global with your registered account details and transaction reference number, if applicable."
       },
       {
-        q: "Is ImproPay customer support available 24/7?",
-        a: "Yes. Our support team monitors inquiries 24/7. We aim to respond to all queries within 24 business hours."
+        q: "What are ImproPay customer support hours?",
+        a: "Our dedicated support team monitors inquiries closely. We aim to respond to all queries within 24 business hours."
       },
       {
         q: "What should I do if I have an issue with a completed transfer?",

@@ -31,7 +31,7 @@ export default function GlobalCTA() {
             </h2>
             
             <p className="text-[0.95rem] md:text-[1.0625rem] text-blue-50/90 mb-10 max-w-lg mx-auto leading-relaxed">
-              Send and receive funds in 70+ local currencies with over 350,000 payout points and real-time live GPS tracking.
+              Send and receive funds across our global network with real-time live tracking.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -56,7 +56,7 @@ export default function GlobalCTA() {
             </div>
             
             <p className="text-white/60 text-[0.6875rem] font-bold font-mono tracking-wider mt-8 uppercase">
-              9 COUNTRIES • 70+ CURRENCIES • 350,000+ PAYOUT HUBS
+              9 COUNTRIES • SECURE PAYOUT HUBS
             </p>
           </div>
         </motion.div>

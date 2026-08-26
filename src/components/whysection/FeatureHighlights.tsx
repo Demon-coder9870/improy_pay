@@ -63,12 +63,12 @@ const highlights = [
     liquidMesh: "radial-gradient(circle at 85% 15%, rgba(244,63,94,0.2) 0%, transparent 60%)",
   },
   {
-    icon: BarChart3,
-    title: "Live rate alerts 24/7",
+    icon: Sparkles,
+    title: "Always-on human support",
     description:
-      "Set your desired rate targets and receive instant push and email triggers when the market shifts in your favor.",
-    stat: "Real-time",
-    statLabel: "live updates",
+      "No bots or endless menus. Connect with our dedicated, multilingual support experts whenever you need help.",
+    stat: "Dedicated",
+    statLabel: "live support",
     gradient: "from-[#f59e0b] to-[#ea580c]",
     glowColor: "rgba(245, 158, 11, 0.25)",
     dotColor: "bg-amber-500",

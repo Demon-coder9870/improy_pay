@@ -18,8 +18,6 @@ import {
 export default function GlobalHero() {
   const stats = [
     { value: "9", label: "Countries & Territories", icon: Globe2 },
-    { value: "70+", label: "Currencies Supported", icon: TrendingUp },
-    { value: "350k+", label: "Cash Pickup Points", icon: MapPin },
     { value: "99.9%", label: "Instant Delivery Rate", icon: Zap }
   ];
 
@@ -82,7 +80,7 @@ export default function GlobalHero() {
               animate="visible"
               className="text-base sm:text-lg md:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal"
             >
-              From London to Manila, New York to Nairobi — Impropay powers borderless financial freedom with real-time settlement, bank-grade encryption, and zero hidden markups.
+              ImproPay powers borderless financial freedom with real-time settlement, bank-grade encryption, and zero hidden markups.
             </motion.p>
 
             {/* Action Buttons */}

@@ -49,10 +49,10 @@ const features = [
   },
   {
     icon: Globe2,
-    badge: "70+ Currencies",
+    badge: "8+ Currencies",
     title: "Global Reach",
     description:
-      "Send money to 9 countries in 70+ currencies. Family in India or a partner in Europe — we connect the world.",
+      "Send money to 9 countries in 8+ currencies. Family in India or a partner in Europe — we connect the world.",
     gradient: "from-[#f59e0b] to-[#ea580c]",
     glowColor: "rgba(245, 158, 11, 0.22)",
     dotColor: "bg-amber-500",
@@ -61,7 +61,7 @@ const features = [
   {
     icon: Clock,
     badge: "Always On",
-    title: "24/7 Support",
+    title: "Dedicated Support",
     description:
       "Our dedicated support team is available around the clock. Need help with a transfer? We're just a message away.",
     gradient: "from-[#06b6d4] to-[#0284c7]",

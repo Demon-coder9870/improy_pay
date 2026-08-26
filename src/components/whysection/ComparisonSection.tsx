@@ -26,7 +26,7 @@ const rows = [
     impropay: "100% online in minutes",
   },
   {
-    feature: "24/7 Support",
+    feature: "Dedicated Support",
     bank: "Office hours only",
     impropay: "Round the clock",
   },

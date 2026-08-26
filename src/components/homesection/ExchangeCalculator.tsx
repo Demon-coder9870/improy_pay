@@ -6,19 +6,20 @@ import { ArrowRight, Clock, ArrowUpDown, ChevronDown, Zap, TrendingUp, RefreshCw
 import FlagIcon from "@/components/ui/FlagIcon";
 
 const currencies = [
-  { code: "AED", name: "UAE Dirham", flag: "🇦🇪", symbol: "د.إ" },
   { code: "INR", name: "Indian Rupee", flag: "🇮🇳", symbol: "₹" },
-  { code: "USD", name: "US Dollar", flag: "🇺🇸", symbol: "$" },
-  { code: "EUR", name: "Euro", flag: "🇪🇺", symbol: "€" },
-  { code: "GBP", name: "British Pound", flag: "🇬🇧", symbol: "£" },
-  { code: "AUD", name: "Australian Dollar", flag: "🇦🇺", symbol: "A$" },
-  { code: "CAD", name: "Canadian Dollar", flag: "🇨🇦", symbol: "C$" },
-  { code: "SGD", name: "Singapore Dollar", flag: "🇸🇬", symbol: "S$" },
+  { code: "LKR", name: "Sri Lankan Rupee", flag: "🇱🇰", symbol: "Rs" },
+  { code: "NPR", name: "Nepalese Rupee", flag: "🇳🇵", symbol: "Rs" },
+  { code: "BDT", name: "Bangladeshi Taka", flag: "🇧🇩", symbol: "৳" },
+  { code: "EGP", name: "Egyptian Pound", flag: "🇪🇬", symbol: "£" },
+  { code: "PKR", name: "Pakistani Rupee", flag: "🇵🇰", symbol: "Rs" },
+  { code: "PHP", name: "Philippine Peso", flag: "🇵🇭", symbol: "₱" },
+  { code: "NGN", name: "Nigerian Naira", flag: "🇳🇬", symbol: "₦" },
+  { code: "ZAR", name: "South African Rand", flag: "🇿🇦", symbol: "R" },
 ];
 
 // Fallback rates (AED base) used if the API is unreachable
 const fallbackRates: Record<string, number> = {
-  AED: 1, USD: 0.27, EUR: 0.25, GBP: 0.22, INR: 22.75, AUD: 0.42, CAD: 0.37, SGD: 0.36,
+  AED: 1, INR: 22.75, LKR: 81.5, NPR: 36.4, BDT: 32.5, EGP: 13.3, PKR: 75.8, PHP: 15.6, NGN: 410.5, ZAR: 5.1,
 };
 
 const API_KEY = process.env.NEXT_PUBLIC_EXCHANGERATE_API_KEY || "8dc667bfc14b4f8679a75507";
@@ -71,8 +72,7 @@ export default function ExchangeCalculator() {
   const cleanAmount = parseFloat(amount.replace(/,/g, "")) || 0;
   const recipientGets = cleanAmount * exchangeRate;
 
-  const fromCur = currencies.find((c) => c.code === fromCurrency);
-  const toCur = currencies.find((c) => c.code === toCurrency);
+
 
   const handleAmountChange = (val: string) => {
     // Only allow numbers and commas

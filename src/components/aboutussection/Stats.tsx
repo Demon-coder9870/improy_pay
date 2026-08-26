@@ -20,11 +20,11 @@ export default function Stats() {
             <div className="body-md font-medium">Active Users</div>
           </motion.div>
           <motion.div variants={fadeUp} whileHover={{ y: -8, scale: 1.02 }} className="card p-6 text-center transition-all duration-300 bg-white">
-            <div className="text-gradient-blue text-4xl font-bold mb-2">$10B</div>
+            <div className="text-gradient-blue text-4xl font-bold mb-2">AED 10B</div>
             <div className="body-md font-medium">Transferred Annually</div>
           </motion.div>
           <motion.div variants={fadeUp} whileHover={{ y: -8, scale: 1.02 }} className="card p-6 text-center transition-all duration-300 bg-white">
-            <div className="text-gradient-blue text-4xl font-bold mb-2">24/7</div>
+            <div className="text-gradient-blue text-4xl font-bold mb-2">Dedicated</div>
             <div className="body-md font-medium">Customer Support</div>
           </motion.div>
         </motion.div>

@@ -37,7 +37,7 @@ const features = [
   },
   {
     num: "06",
-    title: "24/7 Customer Support",
+    title: "Dedicated Customer Support",
     subtitle: "Help Whenever You Need It",
     description: "Our dedicated support team is available around the clock to assist you with every step of your international transfer.",
   },

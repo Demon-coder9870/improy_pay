@@ -9,7 +9,7 @@ import GlobalCTA from "@/components/globalsection/GlobalCTA";
 export const metadata: Metadata = {
   title: "Global Presence & Supported Countries – ImproPay",
   description:
-    "Explore ImproPay's worldwide payout corridors across 9 countries, 70+ currencies, and 350,000+ cash pickup locations. Fast, secure, and regulated international money transfers.",
+    "Explore ImproPay's worldwide payout corridors across 9 countries. Fast, secure, and regulated international money transfers.",
   openGraph: {
     title: "Global Presence & Supported Countries | ImproPay",
     description:

@@ -13,6 +13,8 @@ const currencyToCountry: Record<string, string> = {
   GBP: "gb",
   AED: "ae",
   INR: "in",
+  LKR: "lk",
+  NPR: "np",
   AUD: "au",
   CAD: "ca",
   SGD: "sg",
