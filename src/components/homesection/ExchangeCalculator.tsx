@@ -22,8 +22,6 @@ const fallbackRates: Record<string, number> = {
   AED: 1, INR: 22.75, LKR: 81.5, NPR: 36.4, BDT: 32.5, EGP: 13.3, PKR: 75.8, PHP: 15.6, NGN: 410.5, ZAR: 5.1,
 };
 
-const API_KEY = process.env.NEXT_PUBLIC_EXCHANGERATE_API_KEY || "8dc667bfc14b4f8679a75507";
-
 export default function ExchangeCalculator() {
   const [amount, setAmount] = useState("5,000");
   const [fromCurrency, setFromCurrency] = useState("AED");
@@ -32,27 +30,30 @@ export default function ExchangeCalculator() {
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Fetch live rates from ExchangeRate-API (AED base)
+  // Fetch live rates from Impropay API (AED base)
   const fetchRates = useCallback(async () => {
     setIsLoading(true);
     try {
-      const res = await fetch(
-        `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/AED`
-      );
-      const data = await res.json();
-      if (data.result === "success") {
-        setLiveRates(data.conversion_rates);
-        // Extract the update time
-        const updateTime = data.time_last_update_utc as string;
-        // Format as a short time string
-        const date = new Date(updateTime);
+      const res = await fetch("https://prod.impropay.global/api/kyc/lulu/exchange-rate");
+      const result = await res.json();
+      if (result.status === true && Array.isArray(result.data)) {
+        const newRates: Record<string, number> = { AED: 1 };
+        result.data.forEach((item: { to_currency: string; rate: number }) => {
+          newRates[item.to_currency] = item.rate;
+        });
+        setLiveRates(newRates);
+        
+        // Use current time as update time
+        const date = new Date();
         setLastUpdated(
           date.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", hour12: false })
         );
+      } else {
+        throw new Error("Failed to fetch valid rates data");
       }
     } catch {
       // Silently fall back to hardcoded rates
-      console.warn("ExchangeRate-API unavailable, using fallback rates");
+      console.warn("API unavailable, using fallback rates");
     } finally {
       setIsLoading(false);
     }

@@ -31,8 +31,6 @@ const fallbackRates: Record<string, number> = {
   INR: 22.75, PHP: 15.33,
 };
 
-const API_KEY = process.env.NEXT_PUBLIC_EXCHANGERATE_API_KEY || "8dc667bfc14b4f8679a75507";
-
 function computeRate(
   rates: Record<string, number>,
   from: string,
@@ -54,12 +52,14 @@ export default function Marquee() {
 
   const fetchRates = useCallback(async () => {
     try {
-      const res = await fetch(
-        `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/AED`
-      );
-      const data = await res.json();
-      if (data.result === "success") {
-        setRates(data.conversion_rates);
+      const res = await fetch("https://prod.impropay.global/api/kyc/lulu/exchange-rate");
+      const result = await res.json();
+      if (result.status === true && Array.isArray(result.data)) {
+        const newRates: Record<string, number> = { AED: 1 };
+        result.data.forEach((item: { to_currency: string; rate: number }) => {
+          newRates[item.to_currency] = item.rate;
+        });
+        setRates((prevRates) => ({ ...prevRates, ...newRates }));
       }
     } catch {
       // Keep using fallback rates
