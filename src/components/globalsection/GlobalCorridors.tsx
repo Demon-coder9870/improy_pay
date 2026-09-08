@@ -200,7 +200,9 @@ export default function GlobalCorridors() {
                 </span>
 
                 <Link
-                  href="/"
+                  href="https://play.google.com/store/apps/details?id=com.app.forex.impronics"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-900 hover:text-[#217bc6] transition-colors"
                 >
                   Send Now <ArrowRight size={13} />

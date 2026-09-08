@@ -25,7 +25,9 @@ export default function AnnouncementBar() {
               🚀 Instant transfers to 9 countries
             </span>
             <Link
-              href="#"
+              href="https://play.google.com/store/apps/details?id=com.app.forex.impronics"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white text-xs font-bold px-3 py-1 rounded-full transition-all duration-200 backdrop-blur-sm"
             >
               Learn more

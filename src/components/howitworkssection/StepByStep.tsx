@@ -682,7 +682,9 @@ export default function StepByStep() {
                     </button>
                   ) : (
                     <Link
-                      href="/"
+                      href="https://play.google.com/store/apps/details?id=com.app.forex.impronics"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-md shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:-translate-y-0.5 transition-all"
                     >
                       Start Sending Money

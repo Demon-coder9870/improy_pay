@@ -149,7 +149,7 @@ export default function HeroSection() {
               className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10 sm:mb-12"
             >
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
-                <Link href="#download" className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6fc2] via-[#217bc6] to-[#398ddb] hover:opacity-90 text-white font-bold py-3.5 px-8 rounded-full transition-all shadow-md shadow-blue-500/25 w-full sm:w-auto">
+                <Link href="https://play.google.com/store/apps/details?id=com.app.forex.impronics" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6fc2] via-[#217bc6] to-[#398ddb] hover:opacity-90 text-white font-bold py-3.5 px-8 rounded-full transition-all shadow-md shadow-blue-500/25 w-full sm:w-auto">
                   Download the app <ArrowRight size={18} />
                 </Link>
               </motion.div>

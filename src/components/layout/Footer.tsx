@@ -47,7 +47,9 @@ export default function Footer() {
               <div className="flex flex-wrap gap-3">
                 {/* Google Play */}
                 <a
-                  href="#"
+                  href="https://play.google.com/store/apps/details?id=com.app.forex.impronics"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2.5 bg-white/[0.03] border border-white/10 rounded-xl px-4 py-2 hover:bg-white/[0.08] transition-colors"
                 >
                   <Play size={16} className="text-white fill-white shrink-0" />

@@ -92,7 +92,9 @@ export default function GlobalHero() {
               className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-2"
             >
               <Link
-                href="/"
+                href="https://play.google.com/store/apps/details?id=com.app.forex.impronics"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#1d6fc2] via-[#217bc6] to-[#398ddb] text-white font-bold rounded-2xl px-8 py-4 text-[0.9375rem] shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:-translate-y-0.5 transition-all duration-300"
               >
                 Send Money Globally

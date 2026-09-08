@@ -57,7 +57,9 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-2">
 
             <Link
-              href="#"
+              href="https://play.google.com/store/apps/details?id=com.app.forex.impronics"
+              target="_blank"
+              rel="noopener noreferrer"
               className="primary-button text-[0.9rem] py-2.5 px-5 rounded-full"
             >
               Start a transfer
@@ -100,7 +102,9 @@ export default function Header() {
               <div className="flex items-center gap-3 pt-4 mt-2 border-t border-[--border]">
 
                 <Link
-                  href="#"
+                  href="https://play.google.com/store/apps/details?id=com.app.forex.impronics"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="primary-button flex-1 justify-center text-[0.875rem] py-2.5 rounded-full"
                 >
                   Start a transfer

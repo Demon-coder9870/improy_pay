@@ -245,9 +245,14 @@ export default function ExchangeCalculator() {
               </div>
 
               {/* CTA Button */}
-              <button className="primary-button w-full py-4 text-[0.9375rem] rounded-full mt-5 font-bold">
+              <a 
+                href="https://play.google.com/store/apps/details?id=com.app.forex.impronics"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="primary-button flex justify-center items-center w-full py-4 text-[0.9375rem] rounded-full mt-5 font-bold"
+              >
                 Start this transfer →
-              </button>
+              </a>
 
               {/* Disclaimer */}
               <p className="text-center text-[10px] text-slate-400 font-bold tracking-wide uppercase mt-4">

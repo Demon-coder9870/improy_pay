@@ -52,7 +52,9 @@ export default function CTASection() {
               </motion.a>
 
               <motion.a
-                href="#download-android"
+                href="https://play.google.com/store/apps/details?id=com.app.forex.impronics"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#0B1120] text-white px-5 py-2.5 rounded-[16px] shadow-xl hover:shadow-2xl transition-all border border-white/10"

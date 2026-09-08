@@ -37,7 +37,9 @@ export default function HowItWorksCTA() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
                 <Link
-                  href="/"
+                  href="https://play.google.com/store/apps/details?id=com.app.forex.impronics"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white text-[#217bc6] font-bold text-[0.875rem] px-8 py-3.5 rounded-full shadow-md hover:bg-slate-50 transition-all"
                 >
                   Send money now

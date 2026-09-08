@@ -203,7 +203,9 @@ export default function GlobalExplorer() {
 
                 {/* Send Button Link */}
                 <Link
-                  href="/"
+                  href="https://play.google.com/store/apps/details?id=com.app.forex.impronics"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full py-2.5 rounded-xl bg-slate-100 group-hover:bg-[#217bc6] text-slate-700 group-hover:text-white text-xs font-bold transition-all duration-300 flex items-center justify-center gap-1.5 shadow-sm"
                 >
                   Send to {country.name}
