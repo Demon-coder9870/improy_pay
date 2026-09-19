@@ -21,7 +21,7 @@ const features = [
     num: "03",
     title: "Fast International Transfers",
     subtitle: "Money That Moves Quickly",
-    description: "Send money across borders in minutes with reliable processing and real-time tracking from start to finish.",
+    description: "Send money across borders with instant transfers, reliable processing and real-time tracking from start to finish.",
   },
   {
     num: "04",

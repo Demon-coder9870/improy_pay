@@ -19,7 +19,7 @@ const CORRIDORS = [
     from: { country: "United Arab Emirates", code: "AED" },
     to: { country: "India", code: "INR" },
     rate: "1 AED = 22.75 INR",
-    speed: "Instant (<90 secs)",
+    speed: "Instant Transfers",
     volume: "AED 15B+ Volume",
     methods: "UPI & All Major Banks",
     fee: "0 AED Transfer Fee"
@@ -28,7 +28,7 @@ const CORRIDORS = [
     from: { country: "United Arab Emirates", code: "AED" },
     to: { country: "Sri Lanka", code: "LKR" },
     rate: "1 AED = 83.20 LKR",
-    speed: "Instant (<2 mins)",
+    speed: "Instant Transfers",
     volume: "AED 2B+ Volume",
     methods: "Bank Transfer",
     fee: "0 AED Transfer Fee"
@@ -37,7 +37,7 @@ const CORRIDORS = [
     from: { country: "United Arab Emirates", code: "AED" },
     to: { country: "Nepal", code: "NPR" },
     rate: "1 AED = 36.35 NPR",
-    speed: "Instant (<2 mins)",
+    speed: "Instant Transfers",
     volume: "AED 1.5B+ Volume",
     methods: "Bank Transfer & Cash",
     fee: "0 AED Transfer Fee"
@@ -46,7 +46,7 @@ const CORRIDORS = [
     from: { country: "United Arab Emirates", code: "AED" },
     to: { country: "Bangladesh", code: "BDT" },
     rate: "1 AED = 32.10 BDT",
-    speed: "Under 5 mins",
+    speed: "Instant Transfers",
     volume: "AED 2.4B+ Volume",
     methods: "bKash & Bank Transfer",
     fee: "0 AED Transfer Fee"
@@ -55,7 +55,7 @@ const CORRIDORS = [
     from: { country: "United Arab Emirates", code: "AED" },
     to: { country: "Egypt", code: "EGP" },
     rate: "1 AED = 13.15 EGP",
-    speed: "Instant (<2 mins)",
+    speed: "Instant Transfers",
     volume: "AED 3.3B+ Volume",
     methods: "Bank Transfer & Cash",
     fee: "0 AED Transfer Fee"
@@ -64,7 +64,7 @@ const CORRIDORS = [
     from: { country: "United Arab Emirates", code: "AED" },
     to: { country: "Pakistan", code: "PKR" },
     rate: "1 AED = 75.80 PKR",
-    speed: "Instant (<2 mins)",
+    speed: "Instant Transfers",
     volume: "AED 4.4B+ Volume",
     methods: "1Link, Raast & JazzCash",
     fee: "0 AED Transfer Fee"
@@ -73,7 +73,7 @@ const CORRIDORS = [
     from: { country: "United Arab Emirates", code: "AED" },
     to: { country: "Philippines", code: "PHP" },
     rate: "1 AED = 15.33 PHP",
-    speed: "Under 60 Seconds",
+    speed: "Instant Transfers",
     volume: "AED 7.7B+ Volume",
     methods: "GCash, Maya & BDO",
     fee: "0 AED Transfer Fee"
@@ -82,18 +82,9 @@ const CORRIDORS = [
     from: { country: "United Arab Emirates", code: "AED" },
     to: { country: "Nigeria", code: "NGN" },
     rate: "1 AED = 414.00 NGN",
-    speed: "Instant (<2 mins)",
+    speed: "Instant Transfers",
     volume: "AED 6.6B+ Volume",
     methods: "Direct Bank & Mobile Money",
-    fee: "0 AED Transfer Fee"
-  },
-  {
-    from: { country: "United Arab Emirates", code: "AED" },
-    to: { country: "South Africa", code: "ZAR" },
-    rate: "1 AED = 5.10 ZAR",
-    speed: "Instant (<2 mins)",
-    volume: "AED 1.2B+ Volume",
-    methods: "Bank Transfer",
     fee: "0 AED Transfer Fee"
   }
 ];

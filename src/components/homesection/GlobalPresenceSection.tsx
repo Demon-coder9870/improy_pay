@@ -19,13 +19,7 @@ const offices = [
     address: "Building secure payment technology that powers fast and reliable global money transfers.",
     emoji: "🇮🇳",
   },
-  {
-    country: "South Africa",
-    code: "ZA",
-    role: "Regional Headquarters",
-    address: "Expanding financial access with trusted cross-border payment solutions across Africa.",
-    emoji: "🇿🇦",
-  },
+
   {
     country: "Nigeria",
     code: "NG",

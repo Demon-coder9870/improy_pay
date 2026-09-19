@@ -13,7 +13,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "ImproPay — Send Money Worldwide with Confidence",
   description:
-    "Fast, secure, and affordable international money transfers with competitive exchange rates and real-time tracking. Send money to 9 countries with ImproPay.",
+    "Fast, secure, and affordable international money transfers with competitive exchange rates and real-time tracking. Send money to 8 countries with ImproPay.",
   keywords: [
     "money transfer",
     "international transfer",
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
     url: "https://impropay.com",
     title: "ImproPay — Send Money Worldwide with Confidence",
     description:
-      "Fast, secure, and affordable international money transfers. Send money to 9 countries with the best exchange rates.",
+      "Fast, secure, and affordable international money transfers. Send money to 8 countries with the best exchange rates.",
     siteName: "ImproPay",
   },
   twitter: {
     card: "summary_large_image",
     title: "ImproPay — Send Money Worldwide with Confidence",
     description:
-      "Fast, secure, and affordable international money transfers. Send money to 9 countries with the best exchange rates.",
+      "Fast, secure, and affordable international money transfers. Send money to 8 countries with the best exchange rates.",
     creator: "@impropay",
   },
 };

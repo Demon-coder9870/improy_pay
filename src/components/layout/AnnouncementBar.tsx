@@ -19,10 +19,10 @@ export default function AnnouncementBar() {
         >
           <div className="container-main flex items-center justify-center py-2.5 gap-4 text-[0.8125rem] font-medium tracking-wide">
             <span className="hidden sm:inline opacity-90">
-              🚀 Introducing instant transfers to 9 countries
+              🚀 Introducing instant transfers to 8 countries
             </span>
             <span className="sm:hidden opacity-90 text-xs">
-              🚀 Instant transfers to 9 countries
+              🚀 Instant transfers to 8 countries
             </span>
             <Link
               href="https://play.google.com/store/apps/details?id=com.app.forex.impronics"

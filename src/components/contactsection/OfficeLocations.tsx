@@ -18,12 +18,7 @@ const offices = [
     role: "Technology Center",
     address: "6th Floor, Unitech Trade Center, Sector 43, Gurugram, Haryana",
   },
-  {
-    country: "South Africa",
-    code: "za",
-    role: "Headquarters",
-    address: "Unit 3B Pinewood Park 18 Underwood Road Pinetown KwaZulu-Natal 3610",
-  },
+
   {
     country: "United Kingdom",
     code: "gb",

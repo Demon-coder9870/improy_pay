@@ -25,7 +25,7 @@ export default function GlobalCTA() {
             </span>
             
             <h2 className="text-[2.25rem] md:text-[3.25rem] font-extrabold text-white leading-[1.1] tracking-tight mb-5">
-              Connect with 9 countries
+              Connect with 8 countries
               <br />
               in a few clicks.
             </h2>
@@ -58,7 +58,7 @@ export default function GlobalCTA() {
             </div>
             
             <p className="text-white/60 text-[0.6875rem] font-bold font-mono tracking-wider mt-8 uppercase">
-              9 COUNTRIES • SECURE PAYOUT HUBS
+              8 COUNTRIES • SECURE PAYOUT HUBS
             </p>
           </div>
         </motion.div>

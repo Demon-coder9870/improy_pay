@@ -22,7 +22,7 @@ const features = [
   {
     icon: Globe,
     title: "Global Reach",
-    desc: "Licensed operations serving 9 countries worldwide.",
+    desc: "Licensed operations serving 8 countries worldwide.",
     color: "text-blue-200",
     bgColor: "bg-blue-300/20 border-blue-200/30",
   },

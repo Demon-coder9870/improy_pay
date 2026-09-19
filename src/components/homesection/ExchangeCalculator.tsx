@@ -14,12 +14,12 @@ const currencies = [
   { code: "PKR", name: "Pakistani Rupee", flag: "🇵🇰", symbol: "Rs" },
   { code: "PHP", name: "Philippine Peso", flag: "🇵🇭", symbol: "₱" },
   { code: "NGN", name: "Nigerian Naira", flag: "🇳🇬", symbol: "₦" },
-  { code: "ZAR", name: "South African Rand", flag: "🇿🇦", symbol: "R" },
+
 ];
 
 // Fallback rates (AED base) used if the API is unreachable
 const fallbackRates: Record<string, number> = {
-  AED: 1, INR: 22.75, LKR: 81.5, NPR: 36.4, BDT: 32.5, EGP: 13.3, PKR: 75.8, PHP: 15.6, NGN: 410.5, ZAR: 5.1,
+  AED: 1, INR: 22.75, LKR: 81.5, NPR: 36.4, BDT: 32.5, EGP: 13.3, PKR: 75.8, PHP: 15.6, NGN: 410.5,
 };
 
 export default function ExchangeCalculator() {

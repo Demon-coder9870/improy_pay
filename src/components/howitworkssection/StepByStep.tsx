@@ -483,7 +483,7 @@ export default function StepByStep() {
                         </div>
 
                         <div className="flex items-center justify-between text-[11px] text-white/60 px-1">
-                          <span>⚡ Delivery: <strong>Under 2 Minutes</strong></span>
+                          <span>⚡ Delivery: <strong>Instant Transfers</strong></span>
                           <span>🔒 Guaranteed Rate for: <strong>23h 59m</strong></span>
                         </div>
                       </div>

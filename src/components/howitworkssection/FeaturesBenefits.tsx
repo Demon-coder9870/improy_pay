@@ -29,10 +29,10 @@ const BENEFITS = [
   },
   {
     icon: Zap,
-    badge: "Under 2 Minutes",
+    badge: "Instant Transfers",
     title: "Lightning-Fast Delivery",
     description:
-      "Most transfers arrive in under 2 minutes, sent directly to bank accounts or mobile wallets with instant delivery confirmation.",
+      "Most transfers arrive as instant transfers, sent directly to bank accounts or mobile wallets with instant delivery confirmation.",
     gradient: "from-[#10b981] to-[#059669]",
     glowColor: "rgba(16, 185, 129, 0.22)",
     accentColor: "text-emerald-600",
@@ -41,10 +41,10 @@ const BENEFITS = [
   },
   {
     icon: Globe2,
-    badge: "9 Countries",
+    badge: "8 Countries",
     title: "Global Payout Network",
     description:
-      "Send money to 9 countries at guaranteed, competitive mid-market exchange rates.",
+      "Send money to 8 countries at guaranteed, competitive mid-market exchange rates.",
     gradient: "from-[#8b5cf6] to-[#6366f1]",
     glowColor: "rgba(139, 92, 246, 0.22)",
     accentColor: "text-purple-600",

@@ -68,7 +68,7 @@ export default function GlobalHero() {
             >
               Connect with loved ones in{" "}
               <span className="bg-gradient-to-r from-[#1d6fc2] via-[#217bc6] to-[#398ddb] bg-clip-text text-transparent">
-                9 countries
+                8 countries
               </span>
             </motion.h1>
 

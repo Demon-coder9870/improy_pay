@@ -92,10 +92,10 @@ function PhoneMockup() {
             <div className="w-7 h-7 rounded-full bg-blue-50 flex items-center justify-center">
               <Globe size={12} className="text-blue-600" />
             </div>
-            <p className="text-[11px] font-bold text-[--text-primary]">9 Countries</p>
+            <p className="text-[11px] font-bold text-[--text-primary]">8 Countries</p>
           </div>
           <div className="flex -space-x-1.5">
-            {["IN", "NP", "PK", "BD", "LK", "EG", "PH", "NG", "ZA"].map((f, i) => (
+            {["IN", "NP", "PK", "BD", "LK", "EG", "PH", "NG"].map((f, i) => (
               <FlagIcon key={i} code={f} className="w-5 h-5 rounded-full ring-1 ring-white object-cover shadow-sm bg-white" />
             ))}
             <span className="text-[9px] font-bold text-[--text-muted] bg-gray-50 rounded-full w-5 h-5 flex items-center justify-center ring-1 ring-white z-10 relative">+</span>

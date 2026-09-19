@@ -35,7 +35,7 @@ export default function LeadershipTeam() {
             { 
               name: "Elena Rodriguez", 
               role: "Chief Operations Officer", 
-              bio: "Expert in global compliance and scaling financial networks across 9 countries.",
+              bio: "Expert in global compliance and scaling financial networks across 8 countries.",
               img: "https://i.pravatar.cc/150?img=5" 
             },
             { 

@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Amara O.",
     route: "London → Abuja",
-    content: "Landed in two minutes. I could track every step. It finally feels like the money is respected."
+    content: "Landed instantly. I could track every step. It finally feels like the money is respected."
   },
   {
     name: "Maria D.",
@@ -21,7 +21,7 @@ const testimonials = [
   {
     name: "Amara O.",
     route: "London → Abuja",
-    content: "Landed in two minutes. I could track every step. It finally feels like the money is respected."
+    content: "Landed instantly. I could track every step. It finally feels like the money is respected."
   },
   {
     name: "Maria D.",

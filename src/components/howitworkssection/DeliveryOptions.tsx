@@ -24,7 +24,7 @@ const DELIVERY_METHODS = [
     tagline: "Direct to 100+ major global banking networks",
     icon: Building2,
     speed: "Instant to Same-Day",
-    coverage: "9 Countries",
+    coverage: "8 Countries",
     fee: "$0 Hidden Fees",
     accent: "from-blue-600 to-cyan-500",
     description:
@@ -35,24 +35,6 @@ const DELIVERY_METHODS = [
       "High daily transfer limits for family support or business"
     ],
     partners: ["JPMorgan", "Barclays", "HDFC Bank", "BNP Paribas", "Deutsche Bank"]
-  },
-  {
-    id: "cash",
-    title: "In-Person Cash Collection",
-    tagline: "Collect cash instantly at our trusted local partners",
-    icon: MapPin,
-    speed: "Ready in Minutes",
-    coverage: "Global Cash Agents",
-    fee: "$0 Hidden Fees",
-    accent: "from-purple-600 to-pink-500",
-    description:
-      "Recipients can collect physical cash at thousands of trusted local partner outlets, retail stores, post offices, and exchange houses.",
-    keyBenefits: [
-      "No bank account or smartphone needed for the receiver",
-      "Secured with an encrypted 8-digit pickup code & photo ID check",
-      "Convenient locations in city centres, airports, and rural towns"
-    ],
-    partners: ["Global Exchange", "PostNet", "QuickCash", "MetroBank Agents"]
   }
 ];
 
